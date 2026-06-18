@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hijama Dhaka | Professional Cupping Therapy</title>
+<title>Hijama Dhaka | Home Cupping Therapy</title>
 
-<meta name="description" content="Hijama Dhaka provides safe, hygienic, and Sunnah-based cupping therapy services in Dhaka. Home service within 2 hours. Pain relief, wellness & detox therapy.">
+<meta name="description" content="Hijama Dhaka provides safe, professional, and Sunnah-based home cupping therapy services in Dhaka.">
 
 <style>
 body{
 margin:0;
-font-family:Arial,sans-serif;
+font-family:Arial;
 background:#f8f9fa;
 color:#333;
 }
@@ -23,121 +23,128 @@ text-align:center;
 padding:90px 20px;
 }
 
-.hero h1{
-font-size:50px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:25px;
-}
+.hero h1{font-size:48px;margin:0;}
+.hero p{margin:10px 0 20px;}
 
 .btn{
 display:inline-block;
-padding:14px 26px;
-margin:8px;
+padding:12px 22px;
+margin:6px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
-transition:0.3s;
 }
 
-.call{
-background:white;
-color:#0f766e;
-}
+.call{background:white;color:#0f766e;}
+.wa{background:#25D366;color:white;}
 
-.whatsapp{
-background:#25D366;
-color:white;
-}
-
-/* SECTION */
-section{
-padding:60px 20px;
+/* SECTION TITLE */
+h2{
 text-align:center;
+color:#0f766e;
+margin:40px 0 20px;
 }
 
-/* FEATURES */
-.features{
-background:#fff;
-}
-
+/* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:20px;
 max-width:1200px;
 margin:auto;
 }
 
+/* CARD */
 .card{
-background:#f8f9fa;
-padding:20px;
-border-radius:14px;
-transition:0.3s;
-box-shadow:0 2px 10px rgba(0,0,0,0.06);
-cursor:pointer;
-}
-
-.card:hover{
-transform:translateY(-10px);
-background:linear-gradient(135deg,#0f766e,#115e59);
-color:white;
-box-shadow:0 15px 30px rgba(15,118,110,0.25);
-}
-
-.card h3{
-color:#0f766e;
-}
-
-.card:hover h3,
-.card:hover p{
-color:white;
-}
-
-.icon{
-font-size:40px;
-margin-bottom:10px;
-}
-
-/* SERVICES */
-.services{
-background:#f8f9fa;
-}
-
-.service-box{
-border-left:4px solid #0f766e;
 background:white;
 padding:20px;
 border-radius:12px;
-text-align:left;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
-.service-box:hover{
+.card:hover{
 transform:translateY(-8px);
 background:#0f766e;
 color:white;
 }
 
-/* ABOUT */
-.about{
+.card h3{color:#0f766e;}
+.card:hover h3,.card:hover p{color:white;}
+
+/* WHY CHOOSE ICON */
+.icon{font-size:35px;margin-bottom:8px;}
+
+/* TESTIMONIAL */
+.testimonial{
 background:white;
+padding:15px;
+border-radius:12px;
 }
 
-/* CTA */
+/* APPOINTMENT */
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:12px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+/* CTA BOX */
+.cta-box{
+display:flex;
+gap:10px;
+padding:20px;
+max-width:1100px;
+margin:auto;
+}
+
 .cta{
+flex:1;
+background:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.cta:hover{
+transform:translateY(-8px);
 background:#0f766e;
 color:white;
 }
 
-/* FOOTER */
-footer{
-background:#083344;
-color:white;
+/* FAQ */
+.faq-item{
+background:white;
+margin:10px auto;
 padding:15px;
+border-radius:10px;
+max-width:800px;
+cursor:pointer;
+}
+
+.answer{
+display:none;
+margin-top:10px;
+color:#555;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.cta-box{flex-direction:column;}
 }
 </style>
 </head>
@@ -145,87 +152,92 @@ padding:15px;
 <body>
 
 <!-- HERO -->
-<section class="hero">
+<div class="hero">
 <h1>Hijama Dhaka</h1>
-<p>Professional & Sunnah-Based Cupping Therapy at Your Home</p>
+<p>Professional Home Cupping Therapy Service in Dhaka</p>
+<a class="btn call" href="tel:01914958611">Call Now</a>
+<a class="btn wa" href="https://wa.me/8801914958611">WhatsApp</a>
+</div>
 
-<a class="btn call" href="tel:01914958611">📞 Call Now</a>
-<a class="btn whatsapp" href="https://wa.me/8801914958611">💬 WhatsApp</a>
-</section>
+<!-- SERVICES -->
+<h2>Our Hijama Services</h2>
+<div class="grid">
 
-<!-- FEATURES -->
-<section class="features">
+<div class="card"><h3>Wet Cupping</h3><p>Improves circulation & healing</p></div>
+<div class="card"><h3>Dry Cupping</h3><p>Reduces pain & stiffness</p></div>
+<div class="card"><h3>Pain Management</h3><p>Chronic pain relief therapy</p></div>
+<div class="card"><h3>Hair Loss</h3><p>Improves scalp circulation</p></div>
+<div class="card"><h3>Back Pain</h3><p>Relieves stiffness & pain</p></div>
+<div class="card"><h3>Allergy Care</h3><p>Supports immune system</p></div>
+<div class="card"><h3>Sports Recovery</h3><p>Faster muscle recovery</p></div>
+<div class="card"><h3>Wellness</h3><p>Overall health improvement</p></div>
+</div>
+
+<!-- WHY CHOOSE -->
 <h2>Why Choose Us</h2>
 <div class="grid">
 
-<div class="card">
-<div class="icon">🩺</div>
-<h3>Certified Practitioners</h3>
-<p>Trained & experienced Hijama specialists.</p>
-</div>
-
-<div class="card">
-<div class="icon">🚗</div>
-<h3>Home Service</h3>
-<p>Within 2 hours in Dhaka city.</p>
-</div>
-
-<div class="card">
-<div class="icon">🧼</div>
-<h3>Hygienic Care</h3>
-<p>Sterilized tools & safe procedure.</p>
-</div>
-
-<div class="card">
-<div class="icon">🌙</div>
-<h3>Sunnah Therapy</h3>
-<p>Traditional Islamic healing method.</p>
-</div>
+<div class="card"><div class="icon">🩺</div><h3>Certified Experts</h3><p>Trained practitioners</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Home Service</h3><p>Within 2 hours</p></div>
+<div class="card"><div class="icon">🧼</div><h3>Hygienic Care</h3><p>Safe sterile tools</p></div>
 
 </div>
-</section>
 
-<!-- SERVICES -->
-<section class="services">
-<h2>Our Hijama (Cupping) Services</h2>
-
+<!-- TESTIMONIAL -->
+<h2>Patient Testimonials</h2>
 <div class="grid">
 
-<div class="service-box">Wet Cupping (Hijama) Therapy</div>
-<div class="service-box">Dry Cupping Therapy</div>
-<div class="service-box">Pain Management Cupping</div>
-<div class="service-box">Hijama for Hair Loss</div>
-<div class="service-box">Hijama for Back Pain</div>
-<div class="service-box">Hijama for Allergy</div>
-<div class="service-box">Sports Recovery Cupping</div>
-<div class="service-box">Hijama for Wellness</div>
-<div class="service-box">Stress & Fatigue Relief</div>
-<div class="service-box">Preventive Hijama Sessions</div>
+<div class="testimonial">⭐⭐⭐⭐⭐ “Very professional home service.” – Rahim, Uttara</div>
+<div class="testimonial">⭐⭐⭐⭐⭐ “Safe and hygienic treatment.” – Nusrat, Dhanmondi</div>
+<div class="testimonial">⭐⭐⭐⭐⭐ “Great pain relief experience.” – Ahmed, Mirpur</div>
 
 </div>
-</section>
 
-<!-- ABOUT -->
-<section class="about">
-<h2>About Hijama Dhaka</h2>
-<p>
-We provide professional Hijama therapy in Dhaka with certified practitioners.
-Our goal is safe, hygienic and Sunnah-based treatment at your home within 2 hours.
-</p>
-</section>
+<!-- APPOINTMENT -->
+<h2>Book Appointment</h2>
+<form>
+<input placeholder="Your Name">
+<input placeholder="Location">
+<input placeholder="Phone Number">
+<textarea placeholder="Problem"></textarea>
+<button class="btn call" type="submit">Submit</button>
+</form>
 
-<!-- CTA -->
-<section class="cta">
-<h2>Book Your Hijama Session Today</h2>
-<p>Call or WhatsApp for appointment</p>
+<!-- FAQ -->
+<h2>FAQ</h2>
 
-<a class="btn call" href="tel:01914958611">📞 Call Now</a>
-<a class="btn whatsapp" href="https://wa.me/8801914958611">💬 WhatsApp</a>
-</section>
+<div class="faq-item" onclick="toggle(this)">
+<b>Do you provide home service?</b>
+<div class="answer">Yes, we provide home Hijama service across Dhaka.</div>
+</div>
 
-<footer>
-© 2026 HijamaDhaka.com | All Rights Reserved
-</footer>
+<div class="faq-item" onclick="toggle(this)">
+<b>Is it safe?</b>
+<div class="answer">Yes, we use sterile tools and trained practitioners.</div>
+</div>
+
+<div class="faq-item" onclick="toggle(this)">
+<b>How long session takes?</b>
+<div class="answer">30–60 minutes per session.</div>
+</div>
+
+<script>
+function toggle(el){
+let ans = el.querySelector(".answer");
+ans.style.display = (ans.style.display==="block") ? "none" : "block";
+}
+</script>
+
+<!-- CONTACT CTA -->
+<h2>Contact Us</h2>
+
+<div class="cta-box">
+
+<div class="cta">🚀 Fast Service (2 Hours)</div>
+<div class="cta">⭐ 1000+ Happy Clients</div>
+<div class="cta">🏠 Home Hijama Available</div>
+
+</div>
 
 </body>
 </html>
