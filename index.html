@@ -1,243 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hijama Dhaka | Home Cupping Therapy</title>
-
-<meta name="description" content="Hijama Dhaka provides safe, professional, and Sunnah-based home cupping therapy services in Dhaka.">
-
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hijama Dhaka – Professional Home Cupping Therapy in Dhaka</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-body{
-margin:0;
-font-family:Arial;
-background:#f8f9fa;
-color:#333;
+:root{
+  --gold:#C9A84C;
+  --gold-light:#E8C97A;
+  --gold-pale:#FDF6E3;
+  --deep:#0D1B2A;
+  --deep2:#1A2E40;
+  --teal:#1B6B5A;
+  --teal-light:#2E9E83;
+  --cream:#FAF7F2;
+  --text:#1E1E1E;
+  --text-muted:#6B6B6B;
+  --white:#FFFFFF;
+  --border:#E8E0D0;
+  --radius:14px;
+  --shadow:0 4px 24px rgba(13,27,42,0.10);
+  --shadow-lg:0 12px 48px rgba(13,27,42,0.16);
 }
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--cream);line-height:1.6;}
+img{display:block;max-width:100%;}
 
-/* HERO */
-.hero{
-background:linear-gradient(135deg,#0f766e,#115e59);
-color:white;
-text-align:center;
-padding:90px 20px;
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,27,42,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.18);}
+.nav-inner{max-width:1160px;margin:auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-icon{width:38px;height:38px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;}
+.logo-text{color:var(--white);font-family:'Playfair Display',serif;font-size:20px;font-weight:700;letter-spacing:.3px;}
+.logo-tag{color:var(--gold);font-size:10px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;display:block;margin-top:-2px;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{background:var(--gold);color:var(--deep)!important;padding:8px 20px;border-radius:999px;font-weight:600!important;font-size:13px!important;transition:background .2s!important;}
+.nav-cta:hover{background:var(--gold-light)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:.3s;}
+.mobile-nav{display:none;background:var(--deep);padding:20px 24px;flex-direction:column;gap:16px;}
+.mobile-nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:15px;font-weight:500;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);}
+.mobile-nav a:last-child{border:none;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:linear-gradient(160deg,var(--deep) 0%,var(--deep2) 55%,#0E3028 100%);display:flex;align-items:center;padding:100px 24px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
+.hero-glow{position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,0.12) 0%,transparent 70%);pointer-events:none;}
+.hero-glow2{position:absolute;bottom:-10%;left:-5%;width:400px;height:400px;background:radial-gradient(circle,rgba(27,107,90,0.15) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{max-width:1160px;margin:auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:24px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4.5vw,56px);font-weight:700;color:var(--white);line-height:1.18;margin-bottom:20px;}
+.hero h1 span{color:var(--gold);}
+.hero-sub{color:rgba(255,255,255,0.65);font-size:17px;line-height:1.75;margin-bottom:36px;max-width:480px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--deep);font-weight:700;font-size:15px;padding:14px 28px;border-radius:999px;text-decoration:none;transition:all .25s;border:2px solid var(--gold);}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.4);}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);font-weight:600;font-size:15px;padding:14px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(255,255,255,0.3);transition:all .25s;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+.hero-visual{display:flex;flex-direction:column;gap:16px;align-items:flex-end;}
+.stat-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;}
+.stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.18);border-radius:var(--radius);padding:22px;text-align:center;backdrop-filter:blur(8px);}
+.stat-card .num{font-family:'Playfair Display',serif;font-size:34px;color:var(--gold);font-weight:700;line-height:1;}
+.stat-card .lbl{color:rgba(255,255,255,0.58);font-size:12.5px;margin-top:6px;line-height:1.4;}
+.hero-contact-card{background:rgba(27,107,90,0.18);border:1px solid rgba(46,158,131,0.3);border-radius:var(--radius);padding:20px 24px;width:100%;display:flex;align-items:center;gap:16px;}
+.hero-contact-card .icon{font-size:28px;}
+.hero-contact-card .info{color:var(--white);}
+.hero-contact-card .info strong{display:block;font-size:14px;color:var(--gold-light);margin-bottom:2px;}
+.hero-contact-card .info span{font-size:13px;color:rgba(255,255,255,0.6);}
+
+/* ── SECTION COMMON ── */
+section{padding:90px 24px;}
+.container{max-width:1160px;margin:auto;}
+.section-eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,40px);font-weight:700;color:var(--deep);line-height:1.2;margin-bottom:16px;}
+.section-sub{color:var(--text-muted);font-size:16px;max-width:540px;}
+.section-head{margin-bottom:52px;}
+.section-head.center{text-align:center;}
+.section-head.center .section-sub{margin:0 auto;}
+
+/* ── SERVICES ── */
+.services{background:var(--white);}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;}
+.service-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all .3s;cursor:default;position:relative;overflow:hidden;}
+.service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--teal),var(--deep));opacity:0;transition:.35s;}
+.service-card:hover::before{opacity:1;}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--teal);}
+.service-icon{width:52px;height:52px;background:linear-gradient(135deg,rgba(27,107,90,0.12),rgba(27,107,90,0.06));border:1px solid rgba(27,107,90,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;transition:.3s;position:relative;z-index:1;}
+.service-card:hover .service-icon{background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);}
+.service-card h3{font-size:16px;font-weight:600;color:var(--deep);margin-bottom:8px;transition:.3s;position:relative;z-index:1;}
+.service-card:hover h3{color:var(--white);}
+.service-card p{font-size:13.5px;color:var(--text-muted);line-height:1.65;transition:.3s;position:relative;z-index:1;}
+.service-card:hover p{color:rgba(255,255,255,0.75);}
+.services-cta{text-align:center;margin-top:44px;}
+
+/* ── WHY CHOOSE US ── */
+.why{background:linear-gradient(160deg,var(--deep) 0%,#0E3028 100%);position:relative;overflow:hidden;}
+.why::before{content:'';position:absolute;top:0;right:0;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.08),transparent 70%);pointer-events:none;}
+.why .section-eyebrow{color:var(--gold-light);}
+.why .section-title{color:var(--white);}
+.why .section-sub{color:rgba(255,255,255,0.58);}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;}
+.why-card{background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:var(--radius);padding:28px;transition:all .3s;position:relative;overflow:hidden;}
+.why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--teal-light));transform:scaleX(0);transform-origin:left;transition:.35s;}
+.why-card:hover::after{transform:scaleX(1);}
+.why-card:hover{background:rgba(255,255,255,0.08);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.3);}
+.why-icon{font-size:30px;margin-bottom:16px;}
+.why-card h3{font-size:16px;font-weight:600;color:var(--white);margin-bottom:8px;}
+.why-card p{font-size:13.5px;color:rgba(255,255,255,0.6);line-height:1.65;}
+.why-check{display:flex;align-items:flex-start;gap:10px;margin-top:10px;}
+.why-check svg{flex-shrink:0;margin-top:2px;}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--cream);}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;}
+.testi-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all .3s;position:relative;}
+.testi-card::before{content:'"';position:absolute;top:16px;right:20px;font-family:'Playfair Display',serif;font-size:72px;color:rgba(27,107,90,0.08);line-height:1;}
+.testi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(201,168,76,0.3);}
+.stars{color:var(--gold);font-size:16px;margin-bottom:14px;letter-spacing:2px;}
+.testi-text{font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:20px;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:12px;}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--deep));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:16px;flex-shrink:0;}
+.testi-name{font-weight:600;font-size:14px;color:var(--deep);}
+.testi-loc{font-size:12px;color:var(--text-muted);}
+
+/* ── APPOINTMENT ── */
+.appointment{background:var(--white);}
+.appt-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start;}
+.appt-info{}
+.appt-info h2{font-family:'Playfair Display',serif;font-size:32px;color:var(--deep);margin-bottom:14px;}
+.appt-info p{color:var(--text-muted);font-size:15px;margin-bottom:28px;line-height:1.75;}
+.appt-feature{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.appt-feature .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);}
+.appt-feature span{font-size:14px;color:var(--text);}
+.appt-form{background:var(--cream);border:1px solid var(--border);border-radius:20px;padding:36px;}
+.appt-form h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--deep);margin-bottom:24px;}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--deep);margin-bottom:7px;letter-spacing:.3px;}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:10px;font-family:'Inter',sans-serif;font-size:14px;color:var(--text);background:var(--white);transition:border-color .2s,box-shadow .2s;outline:none;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(27,107,90,0.1);}
+.form-group textarea{resize:vertical;min-height:90px;}
+.form-submit{width:100%;background:linear-gradient(135deg,var(--teal),var(--deep));color:var(--white);border:none;padding:15px;border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .25s;letter-spacing:.3px;}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,107,90,0.35);}
+.form-note{text-align:center;font-size:12px;color:var(--text-muted);margin-top:12px;}
+
+/* ── FAQ ── */
+.faq{background:linear-gradient(160deg,#F0EDE6 0%,var(--cream) 100%);}
+.faq-grid{max-width:760px;margin:0 auto;}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;transition:box-shadow .3s;}
+.faq-item:hover{box-shadow:var(--shadow);}
+.faq-q{width:100%;background:none;border:none;padding:20px 24px;text-align:left;font-family:'Inter',sans-serif;font-size:14.5px;font-weight:600;color:var(--deep);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:.2s;}
+.faq-q:hover{color:var(--teal);}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--cream);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.3s;font-size:16px;color:var(--teal);}
+.faq-item.open .faq-icon{background:var(--teal);border-color:var(--teal);color:var(--white);transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;}
+.faq-a-inner{padding:0 24px 20px;font-size:14px;color:var(--text-muted);line-height:1.75;border-top:1px solid var(--border);}
+.faq-item.open .faq-a{max-height:300px;}
+
+/* ── ABOUT ── */
+.about{background:var(--white);}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about-visual{position:relative;}
+.about-bg-card{background:linear-gradient(135deg,var(--deep),var(--teal));border-radius:24px;padding:48px 36px;color:var(--white);position:relative;overflow:hidden;}
+.about-bg-card::before{content:'☽';position:absolute;top:-10px;right:20px;font-size:120px;opacity:.06;line-height:1;}
+.about-bg-card h3{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:14px;}
+.about-bg-card p{font-size:14px;opacity:.75;line-height:1.8;margin-bottom:24px;}
+.about-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.about-tag{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:12px;font-weight:500;padding:5px 14px;border-radius:999px;}
+.about-float{position:absolute;bottom:-16px;right:-16px;background:var(--gold);border-radius:16px;padding:18px 22px;color:var(--deep);font-weight:700;}
+.about-float .big{font-size:32px;font-family:'Playfair Display',serif;line-height:1;}
+.about-float .sm{font-size:11px;font-weight:600;letter-spacing:.5px;}
+.about-content .section-sub{max-width:100%;}
+.about-content p{color:var(--text-muted);font-size:15px;line-height:1.8;margin-bottom:16px;}
+.about-content .btn-primary{margin-top:8px;}
+
+/* ── CONTACT ── */
+.contact{background:linear-gradient(160deg,var(--deep) 0%,#0E3028 100%);padding:90px 24px;}
+.contact .section-eyebrow{color:var(--gold-light);}
+.contact .section-title{color:var(--white);}
+.contact .section-sub{color:rgba(255,255,255,0.58);}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px;margin-top:48px;}
+.contact-card{background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.18);border-radius:var(--radius);padding:28px;text-align:center;transition:all .3s;}
+.contact-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px);}
+.contact-card .cicon{font-size:36px;margin-bottom:14px;}
+.contact-card h4{color:var(--gold-light);font-size:14px;font-weight:600;letter-spacing:.5px;margin-bottom:8px;}
+.contact-card p,.contact-card a{color:rgba(255,255,255,0.75);font-size:14.5px;text-decoration:none;display:block;line-height:1.6;}
+.contact-card a:hover{color:var(--gold);}
+.contact-btns{display:flex;justify-content:center;gap:16px;margin-top:44px;flex-wrap:wrap;}
+.btn-call{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--deep);font-weight:700;font-size:15px;padding:15px 32px;border-radius:999px;text-decoration:none;transition:all .25s;}
+.btn-call:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.4);}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:var(--white);font-weight:700;font-size:15px;padding:15px 32px;border-radius:999px;text-decoration:none;transition:all .25s;}
+.btn-wa:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,0.35);}
+
+/* ── FOOTER ── */
+footer{background:var(--deep);border-top:1px solid rgba(201,168,76,0.15);padding:32px 24px;text-align:center;}
+footer p{color:rgba(255,255,255,0.4);font-size:13px;}
+footer span{color:var(--gold);}
+
+/* ── FLOATING WA BTN ── */
+.float-wa{position:fixed;bottom:24px;right:24px;z-index:998;background:#25D366;color:var(--white);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,0.4);transition:transform .25s;}
+.float-wa:hover{transform:scale(1.1);}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:96px;right:24px;z-index:9999;background:var(--teal);color:var(--white);padding:14px 22px;border-radius:12px;font-size:14px;font-weight:500;transform:translateY(20px);opacity:0;transition:.4s;pointer-events:none;max-width:300px;}
+.toast.show{transform:translateY(0);opacity:1;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:40px;}
+  .hero-visual{align-items:stretch;}
+  .appt-wrap{grid-template-columns:1fr;}
+  .about-inner{grid-template-columns:1fr;}
+  .about-float{display:none;}
 }
-
-.hero h1{font-size:48px;margin:0;}
-.hero p{margin:10px 0 20px;}
-
-.btn{
-display:inline-block;
-padding:12px 22px;
-margin:6px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+@media(max-width:600px){
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .hero-btns{flex-direction:column;}
+  .btn-primary,.btn-outline{justify-content:center;}
+  .contact-btns{flex-direction:column;align-items:center;}
+  section{padding:64px 18px;}
 }
-
-.call{background:white;color:#0f766e;}
-.wa{background:#25D366;color:white;}
-
-/* SECTION TITLE */
-h2{
-text-align:center;
-color:#0f766e;
-margin:40px 0 20px;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-padding:20px;
-max-width:1200px;
-margin:auto;
-}
-
-/* CARD */
-.card{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-background:#0f766e;
-color:white;
-}
-
-.card h3{color:#0f766e;}
-.card:hover h3,.card:hover p{color:white;}
-
-/* WHY CHOOSE ICON */
-.icon{font-size:35px;margin-bottom:8px;}
-
-/* TESTIMONIAL */
-.testimonial{
-background:white;
-padding:15px;
-border-radius:12px;
-}
-
-/* APPOINTMENT */
-form{
-max-width:600px;
-margin:auto;
-background:white;
-padding:20px;
-border-radius:12px;
-}
-
-input,textarea{
-width:100%;
-padding:10px;
-margin:8px 0;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-/* CTA BOX */
-.cta-box{
-display:flex;
-gap:10px;
-padding:20px;
-max-width:1100px;
-margin:auto;
-}
-
-.cta{
-flex:1;
-background:white;
-padding:20px;
-border-radius:12px;
-text-align:center;
-cursor:pointer;
-transition:0.3s;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-.cta:hover{
-transform:translateY(-8px);
-background:#0f766e;
-color:white;
-}
-
-/* FAQ */
-.faq-item{
-background:white;
-margin:10px auto;
-padding:15px;
-border-radius:10px;
-max-width:800px;
-cursor:pointer;
-}
-
-.answer{
-display:none;
-margin-top:10px;
-color:#555;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.cta-box{flex-direction:column;}
-}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
 </style>
 </head>
-
 <body>
 
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">☽</div>
+      <div>
+        <span class="logo-text">Hijama Dhaka</span>
+        <span class="logo-tag">Sunnah Care</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+      <a href="#appointment" class="nav-cta">Book Now</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" onclick="toggleMobile()">Services</a>
+    <a href="#why" onclick="toggleMobile()">Why Us</a>
+    <a href="#testimonials" onclick="toggleMobile()">Reviews</a>
+    <a href="#faq" onclick="toggleMobile()">FAQ</a>
+    <a href="#about" onclick="toggleMobile()">About</a>
+    <a href="#appointment" onclick="toggleMobile()">📅 Book Appointment</a>
+    <a href="tel:01914958611" onclick="toggleMobile()">📞 Call Now</a>
+  </div>
+</nav>
+
 <!-- HERO -->
-<div class="hero">
-<h1>Hijama Dhaka</h1>
-<p>Professional Home Cupping Therapy Service in Dhaka</p>
-<a class="btn call" href="tel:01914958611">Call Now</a>
-<a class="btn wa" href="https://wa.me/8801914958611">WhatsApp</a>
-</div>
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">☽ Sunnah Care · Cupping Therapy</div>
+      <h1>Professional Home<br><span>Hijama Therapy</span><br>in Dhaka</h1>
+      <p class="hero-sub">Certified practitioners come to your home with sterile, hygienic equipment — delivering safe, effective cupping therapy anywhere in Dhaka within 2 hours.</p>
+      <div class="hero-btns">
+        <a href="#appointment" class="btn-primary">📅 Book an Appointment</a>
+        <a href="https://wa.me/8801914958611" class="btn-outline">💬 WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="num">1000+</div>
+          <div class="lbl">Successful Hijama Sessions</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">2hrs</div>
+          <div class="lbl">Home Visit Anywhere in Dhaka</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">100%</div>
+          <div class="lbl">Sterile & Disposable Equipment</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">5★</div>
+          <div class="lbl">Patient Satisfaction Rate</div>
+        </div>
+      </div>
+      <div class="hero-contact-card">
+        <div class="icon">📞</div>
+        <div class="info">
+          <strong>Call or WhatsApp to Book</strong>
+          <span>01914-958611 &nbsp;|&nbsp; 01751-888446</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- SERVICES -->
-<h2>Our Hijama Services</h2>
-<div class="grid">
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-eyebrow">What We Offer</div>
+      <h2 class="section-title">Our Hijama Services</h2>
+      <p class="section-sub">Professional cupping therapy services delivered at your home with certified practitioners and hygienic equipment.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">🩸</div><h3>Wet Cupping Therapy</h3><p>Improves circulation, relieves muscle tension, and promotes natural healing through traditional Hijama technique.</p></div>
+      <div class="service-card"><div class="service-icon">💨</div><h3>Dry Cupping Therapy</h3><p>Reduces pain, muscle stiffness, and stress by stimulating blood flow without incision.</p></div>
+      <div class="service-card"><div class="service-icon">🦴</div><h3>Pain Management Cupping</h3><p>Helps manage chronic pain, muscle tension, and joint discomfort through targeted cupping.</p></div>
+      <div class="service-card"><div class="service-icon">💇</div><h3>Hijama for Hair Loss</h3><p>Supports scalp circulation and promotes healthier hair growth with focused cupping therapy.</p></div>
+      <div class="service-card"><div class="service-icon">🔙</div><h3>Hijama for Back Pain</h3><p>Relieves back pain, reduces stiffness, and improves mobility for lasting comfort.</p></div>
+      <div class="service-card"><div class="service-icon">🌿</div><h3>Hijama for Allergy</h3><p>Supports immune balance and helps manage allergy-related symptoms naturally.</p></div>
+      <div class="service-card"><div class="service-icon">🏃</div><h3>Sports Recovery Cupping</h3><p>Reduces muscle soreness and speeds up recovery after physical activity or training.</p></div>
+      <div class="service-card"><div class="service-icon">✨</div><h3>Hijama for Wellness</h3><p>Promotes relaxation, better circulation, and overall physical and mental well-being.</p></div>
+      <div class="service-card"><div class="service-icon">🧘</div><h3>Stress & Fatigue Relief</h3><p>Helps reduce stress, fatigue, and physical tension through therapeutic cupping sessions.</p></div>
+      <div class="service-card"><div class="service-icon">🛡️</div><h3>Preventive Hijama Sessions</h3><p>Supports long-term health and preventive wellness care through regular sessions.</p></div>
+    </div>
+    <div class="services-cta">
+      <a href="#appointment" class="btn-primary">📅 Book a Session</a>
+      &nbsp;&nbsp;
+      <a href="https://wa.me/8801914958611" class="btn-outline" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--deep);border:2px solid var(--teal);border-radius:999px;padding:14px 28px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
 
-<div class="card"><h3>Wet Cupping</h3><p>Improves circulation & healing</p></div>
-<div class="card"><h3>Dry Cupping</h3><p>Reduces pain & stiffness</p></div>
-<div class="card"><h3>Pain Management</h3><p>Chronic pain relief therapy</p></div>
-<div class="card"><h3>Hair Loss</h3><p>Improves scalp circulation</p></div>
-<div class="card"><h3>Back Pain</h3><p>Relieves stiffness & pain</p></div>
-<div class="card"><h3>Allergy Care</h3><p>Supports immune system</p></div>
-<div class="card"><h3>Sports Recovery</h3><p>Faster muscle recovery</p></div>
-<div class="card"><h3>Wellness</h3><p>Overall health improvement</p></div>
-</div>
+<!-- WHY CHOOSE US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-eyebrow">Our Promise</div>
+      <h2 class="section-title">Why Choose Hijama Dhaka?</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.55);">Trusted by 1000+ patients across Dhaka for safe, professional, and convenient home Hijama service.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🏅</div>
+        <h3>Certified & Experienced Practitioners</h3>
+        <p>Our Hijama therapists are trained professionals skilled in infection control, safe cupping techniques, and client care.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Home Service Within 2 Hours</h3>
+        <p>Book anytime and our practitioner arrives at your doorstep anywhere in Dhaka within 2 hours — no travel needed.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🧪</div>
+        <h3>Safe, Hygienic & Sterilized Equipment</h3>
+        <p>We use sterile cups, disposable blades, gloves, and antiseptic materials every single session — no exceptions.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💊</div>
+        <h3>Pain Relief for Back, Neck & Joints</h3>
+        <p>Targeted Hijama therapy for common pain points — back, neck, shoulder, and joint discomfort, managed effectively.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📊</div>
+        <h3>1000+ Successful Sessions</h3>
+        <p>A strong track record of satisfied patients across Dhaka, from Uttara to Mohammadpur and everywhere in between.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Affordable & Trusted Home Treatment</h3>
+        <p>Competitive pricing with no hidden fees — quality Hijama therapy made accessible for every household in Dhaka.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- WHY CHOOSE -->
-<h2>Why Choose Us</h2>
-<div class="grid">
-
-<div class="card"><div class="icon">🩺</div><h3>Certified Experts</h3><p>Trained practitioners</p></div>
-<div class="card"><div class="icon">🚗</div><h3>Home Service</h3><p>Within 2 hours</p></div>
-<div class="card"><div class="icon">🧼</div><h3>Hygienic Care</h3><p>Safe sterile tools</p></div>
-
-</div>
-
-<!-- TESTIMONIAL -->
-<h2>Patient Testimonials</h2>
-<div class="grid">
-
-<div class="testimonial">⭐⭐⭐⭐⭐ “Very professional home service.” – Rahim, Uttara</div>
-<div class="testimonial">⭐⭐⭐⭐⭐ “Safe and hygienic treatment.” – Nusrat, Dhanmondi</div>
-<div class="testimonial">⭐⭐⭐⭐⭐ “Great pain relief experience.” – Ahmed, Mirpur</div>
-
-</div>
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-eyebrow">Patient Stories</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <p class="section-sub">Real experiences from real people — across Dhaka's neighborhoods.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"দীর্ঘদিনের ঘাড় ও কাঁধের অস্বস্তির জন্য হিজামা নিয়েছিলাম। থেরাপিস্ট খুবই পেশাদার ছিলেন এবং সম্পূর্ণ স্বাস্থ্যবিধি মেনে সেবা দিয়েছেন। বাসায় সেবা পাওয়াটা সত্যিই অনেক সুবিধাজনক ছিল।"</p>
+        <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Md. Rahim</div><div class="testi-loc">📍 Uttara</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"হোম হিজামা সার্ভিস নিয়ে আমি খুবই সন্তুষ্ট। থেরাপিস্ট সময়মতো এসেছেন, সব সরঞ্জাম ছিল জীবাণুমুক্ত এবং পুরো প্রক্রিয়াটি খুব নিরাপদ মনে হয়েছে।"</p>
+        <div class="testi-author"><div class="testi-avatar">N</div><div><div class="testi-name">Nusrat Jahan</div><div class="testi-loc">📍 Dhanmondi</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"অনেকদিন ধরে শরীরে ক্লান্তি ও পেশীর টান অনুভব করছিলাম। হিজামা নেওয়ার পর নিজেকে অনেক বেশি সতেজ ও আরামদায়ক মনে হয়েছে।"</p>
+        <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">S. Ahmed</div><div class="testi-loc">📍 Mirpur</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Female Hijama Therapist চেয়েছিলাম এবং খুব সহজেই পেয়েছি। সেবার মান, আন্তরিকতা এবং গোপনীয়তা বজায় রাখার বিষয়টি আমাকে মুগ্ধ করেছে।"</p>
+        <div class="testi-author"><div class="testi-avatar">F</div><div><div class="testi-name">Farzana Akter</div><div class="testi-loc">📍 Bashundhara</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"ব্যস্ততার কারণে ক্লিনিকে যাওয়া সম্ভব হয় না। তাই বাসায় হিজামা সেবা নেওয়াটা আমার জন্য খুবই উপকারী হয়েছে। Booking থেকে Service পর্যন্ত সবকিছু ছিল সহজ ও পেশাদার।"</p>
+        <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Amina Khatun</div><div class="testi-loc">📍 Mohammadpur</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"প্রথমবার হিজামা নেওয়ার আগে কিছুটা দ্বিধায় ছিলাম। কিন্তু থেরাপিস্ট পুরো প্রক্রিয়াটি সুন্দরভাবে বুঝিয়ে দিয়েছেন এবং খুব যত্ন নিয়ে সেবা দিয়েছেন। অভিজ্ঞতাটি সত্যিই ভালো ছিল।"</p>
+        <div class="testi-author"><div class="testi-avatar">T</div><div><div class="testi-name">Tanvir Ahmed</div><div class="testi-loc">📍 Mirpur</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- APPOINTMENT -->
-<h2>Book Appointment</h2>
-<form>
-<input placeholder="Your Name">
-<input placeholder="Location">
-<input placeholder="Phone Number">
-<textarea placeholder="Problem"></textarea>
-<button class="btn call" type="submit">Submit</button>
-</form>
+<section class="appointment" id="appointment">
+  <div class="container">
+    <div class="appt-wrap">
+      <div class="appt-info">
+        <div class="section-eyebrow">Book Now</div>
+        <h2>Request a Home Hijama Session</h2>
+        <p>Fill in your details and we'll confirm your appointment and send a practitioner to your home at the agreed time.</p>
+        <div class="appt-feature"><div class="dot"></div><span>Response within 30 minutes</span></div>
+        <div class="appt-feature"><div class="dot"></div><span>Home visit within 2 hours of confirmation</span></div>
+        <div class="appt-feature"><div class="dot"></div><span>Female therapist available on request</span></div>
+        <div class="appt-feature"><div class="dot"></div><span>Fully sterile, disposable equipment</span></div>
+        <div class="appt-feature"><div class="dot"></div><span>Available across all major Dhaka areas</span></div>
+        <br>
+        <a href="tel:01914958611" class="btn-primary" style="display:inline-flex;">📞 Call to Book: 01914-958611</a>
+      </div>
+      <div class="appt-form">
+        <h3>Appointment Request Form</h3>
+        <form onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label>Your Full Name *</label>
+            <input type="text" id="f-name" placeholder="e.g. Md. Abdullah" required/>
+          </div>
+          <div class="form-group">
+            <label>Location / Area in Dhaka *</label>
+            <input type="text" id="f-location" placeholder="e.g. Uttara, Mirpur, Dhanmondi..." required/>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="f-phone" placeholder="01XXXXXXXXX" required/>
+          </div>
+          <div class="form-group">
+            <label>Health Problem / Service Needed *</label>
+            <textarea id="f-problem" placeholder="Describe your symptoms or which service you need..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select id="f-time">
+              <option value="">Select preferred time</option>
+              <option>Morning (8am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 8pm)</option>
+              <option>Any time</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">📅 Submit Appointment Request</button>
+          <p class="form-note">Your details will be sent to <strong>activecarebd07@gmail.com</strong> and our team will contact you shortly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FAQ -->
-<h2>FAQ</h2>
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-eyebrow">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know about our Home Hijama service in Dhaka.</p>
+    </div>
+    <div class="faq-grid" id="faqGrid">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">আপনাদের কি Home Hijama Service আছে?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। আমরা ঢাকায় Home Hijama (Cupping Therapy) Service প্রদান করি। অভিজ্ঞ ও প্রশিক্ষিত Hijama Practitioner রোগীর বাসায় গিয়ে নিরাপদ ও স্বাস্থ্যসম্মতভাবে সেবা দিয়ে থাকেন।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Booking confirm হওয়ার পর Therapist কতক্ষণে আসেন?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">সাধারণত Booking Confirm হওয়ার কয়েক ঘণ্টার মধ্যে অথবা নির্ধারিত সময় অনুযায়ী Hijama Therapist বাসায় পৌঁছে যান।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">ঢাকার সব এলাকায় কি Home Hijama Service পাওয়া যায়?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। ঢাকার বেশিরভাগ এলাকায় Home Hijama Service প্রদান করা হয়, যেমন Uttara, Mirpur, Dhanmondi, Gulshan, Mohammadpur, Bashundhara ও অন্যান্য এলাকা।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">আপনাদের Practitioner দের qualification কী?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">আমাদের Hijama Practitioner রা প্রশিক্ষণপ্রাপ্ত এবং স্বাস্থ্যবিধি, Infection Control ও Safe Cupping Techniques বিষয়ে দক্ষ।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">বাসায় কি প্রয়োজনীয় Hijama Equipment আনা হয়?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। আমরা Sterile Cups, Disposable Blades, Gloves, Antiseptic Materials এবং প্রয়োজনীয় সব Equipment সঙ্গে নিয়ে আসি।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">একটি Hijama Session কত সময়ের হয়?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">একটি Hijama Session সাধারণত ৩০ থেকে ৬০ মিনিট পর্যন্ত হয়, রোগীর শারীরিক অবস্থা ও প্রয়োজন অনুযায়ী।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Female Hijama Therapist কি বাসায় আসেন?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। প্রয়োজন অনুযায়ী Female Hijama Therapist Home Visit দিয়ে থাকেন, বিশেষ করে মহিলা রোগীদের জন্য।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Hijama Therapy কি ব্যথা কমাতে সাহায্য করে?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">অনেক মানুষ Hijama Therapy এর মাধ্যমে ঘাড় ব্যথা, কোমর ব্যথা, কাঁধ ব্যথা ও পেশীর টান কমাতে উপকার অনুভব করেন। তবে এর কার্যকারিতা ব্যক্তি ভেদে ভিন্ন হতে পারে।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">কোন কোন সমস্যায় Hijama Therapy নেওয়া হয়?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">মানুষ সাধারণত দীর্ঘস্থায়ী পেশীর ব্যথা, শরীরের ক্লান্তি, মাথাব্যথা, ঘাড়-কাঁধের টান ও সাধারণ সুস্থতা বৃদ্ধির উদ্দেশ্যে Hijama Therapy নিয়ে থাকেন।</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Hijama Therapy কি সবার জন্য উপযোগী?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">না। গর্ভাবস্থা, রক্তক্ষরণজনিত রোগ, গুরুতর অ্যানিমিয়া বা Blood Thinner সেবনকারী রোগীদের আগে অবশ্যই চিকিৎসকের পরামর্শ নেওয়া উচিত।</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="faq-item" onclick="toggle(this)">
-<b>Do you provide home service?</b>
-<div class="answer">Yes, we provide home Hijama service across Dhaka.</div>
-</div>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-visual">
+        <div class="about-bg-card">
+          <h3>Hijama Dhaka</h3>
+          <p>A trusted provider of Home Hijama (Cupping Therapy) Services in Dhaka, Bangladesh. Our mission is to make professional, safe, and convenient Hijama therapy accessible to individuals and families in the comfort of their homes.</p>
+          <div class="about-tags">
+            <span class="about-tag">Uttara</span>
+            <span class="about-tag">Mirpur</span>
+            <span class="about-tag">Dhanmondi</span>
+            <span class="about-tag">Gulshan</span>
+            <span class="about-tag">Banani</span>
+            <span class="about-tag">Mohammadpur</span>
+            <span class="about-tag">Bashundhara</span>
+            <span class="about-tag">+ All Dhaka</span>
+          </div>
+        </div>
+        <div class="about-float">
+          <div class="big">1000+</div>
+          <div class="sm">Sessions Done</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-eyebrow">About Us</div>
+        <h2 class="section-title">Bringing Sunnah Healing to Your Home</h2>
+        <p>At HijamaDhaka, our trained practitioners follow strict hygiene and infection control protocols by using sterile, disposable equipment and maintaining high standards of safety during every session.</p>
+        <p>We focus on delivering a comfortable and professional experience tailored to each client's needs. We believe that quality care should be convenient and accessible — that's why our Home Hijama Service is designed to save your time and provide personalized attention without the hassle of traveling to a clinic.</p>
+        <p>We serve all major areas of Dhaka, including Uttara, Mirpur, Dhanmondi, Gulshan, Banani, Mohammadpur, and surrounding locations.</p>
+        <a href="#appointment" class="btn-primary">📅 Book Your Session</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="faq-item" onclick="toggle(this)">
-<b>Is it safe?</b>
-<div class="answer">Yes, we use sterile tools and trained practitioners.</div>
-</div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Contact Hijama Dhaka</h2>
+      <p class="section-sub">Reach us by call, WhatsApp, or email — we respond quickly to every inquiry.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="cicon">📞</div>
+        <h4>Primary Phone</h4>
+        <a href="tel:01914958611">01914-958611</a>
+      </div>
+      <div class="contact-card">
+        <div class="cicon">📱</div>
+        <h4>Secondary Phone</h4>
+        <a href="tel:01751888446">01751-888446</a>
+      </div>
+      <div class="contact-card">
+        <div class="cicon">✉️</div>
+        <h4>Email</h4>
+        <a href="mailto:info@hijamadhaka.com">info@hijamadhaka.com</a>
+        <a href="mailto:activecarebd07@gmail.com" style="font-size:12px;opacity:.7;margin-top:4px">activecarebd07@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="cicon">📍</div>
+        <h4>Service Area</h4>
+        <p>Anywhere in Dhaka</p>
+        <p style="font-size:12px;opacity:.65;margin-top:4px">Home visits all over Dhaka city</p>
+      </div>
+    </div>
+    <div class="contact-btns">
+      <a href="tel:01914958611" class="btn-call">📞 Call Now</a>
+      <a href="https://wa.me/8801914958611" class="btn-wa">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
 
-<div class="faq-item" onclick="toggle(this)">
-<b>How long session takes?</b>
-<div class="answer">30–60 minutes per session.</div>
-</div>
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Hijama Dhaka</span> · Professional Home Cupping Therapy in Dhaka, Bangladesh · <span>Sunnah Care</span></p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/8801914958611" class="float-wa" title="Chat on WhatsApp">💬</a>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
 
 <script>
-function toggle(el){
-let ans = el.querySelector(".answer");
-ans.style.display = (ans.style.display==="block") ? "none" : "block";
+function toggleMobile(){
+  const mn = document.getElementById('mobileNav');
+  mn.style.display = mn.style.display === 'flex' ? 'none' : 'flex';
 }
+
+function toggleFaq(btn){
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3800);
+}
+
+function submitForm(e){
+  e.preventDefault();
+  const name = document.getElementById('f-name').value;
+  const location = document.getElementById('f-location').value;
+  const phone = document.getElementById('f-phone').value;
+  const problem = document.getElementById('f-problem').value;
+  const time = document.getElementById('f-time').value || 'Not specified';
+
+  const subject = encodeURIComponent('Hijama Appointment Request - ' + name);
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Location: ' + location + '\n' +
+    'Phone: ' + phone + '\n' +
+    'Problem: ' + problem + '\n' +
+    'Preferred Time: ' + time
+  );
+  window.open('mailto:activecarebd07@gmail.com?subject=' + subject + '&body=' + body);
+  showToast('✅ Your appointment request has been prepared! Please send the email that just opened.');
+  e.target.reset();
+}
+
+// Scroll reveal animation
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      en.target.style.opacity='1';
+      en.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.1});
+
+document.querySelectorAll('.service-card,.why-card,.testi-card,.contact-card').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(28px)';
+  el.style.transition='opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
 </script>
-
-<!-- CONTACT CTA -->
-<h2>Contact Us</h2>
-
-<div class="cta-box">
-
-<div class="cta">🚀 Fast Service (2 Hours)</div>
-<div class="cta">⭐ 1000+ Happy Clients</div>
-<div class="cta">🏠 Home Hijama Available</div>
-
-</div>
-
 </body>
 </html>
