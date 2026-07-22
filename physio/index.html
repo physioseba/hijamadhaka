@@ -1,23 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Physiotherapy in Dhaka | Physio Seba</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    font-family:Arial, sans-serif;
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+}
+
+/* MAIN BOX */
+.box{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:420px;
+    width:100%;
+}
+
+/* LOGO */
+.logo{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid #0a7cff;
+    margin-bottom:12px;
+}
+
+/* TITLE */
+h1{
+    color:#0a7cff;
+    margin:5px 0;
+    font-size:28px;
+    line-height:1.2;
+    font-weight:700;
+}
+
+/* SUBHEADLINE */
+.hero-tagline{
+    font-size:16px;
+    font-weight:700;
+    color:#0a7cff;
+    margin:8px 0;
+    line-height:1.5;
+}
+
+/* DESCRIPTION */
+.hero-description{
+    margin:10px auto 16px;
+    color:#555;
+    font-size:14px;
+    line-height:1.7;
+    max-width:360px;
+}
+
+/* MAIN IMAGE */
+.main-img{
+    width:100%;
+    border-radius:12px;
+    margin:12px 0;
+    display:block;
+}
+
+/* TRUST */
+.trust{
+    text-align:left;
+    background:#f8f9ff;
+    border:1px solid #dbe9ff;
+    padding:14px;
+    border-radius:10px;
+    margin:15px 0;
+    font-size:14px;
+    color:#333;
+    line-height:1.8;
+}
+
+/* BUTTONS */
+.btn{
+    display:block;
+    margin-top:12px;
+    padding:14px;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:700;
+    transition:0.25s ease;
+}
+
+.call-btn{
+    background:#0a7cff;
+}
+
+.call-btn:hover{
+    background:#0869d8;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+.whatsapp-btn:hover{
+    background:#1fb357;
+}
+
+/* SERVICES */
+.services{
+    margin-top:24px;
+}
+
+.section-title{
+    text-align:center;
+    color:#0a7cff;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+/* SERVICE CARD */
+.service-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:12px;
+    padding:16px;
+    margin-top:14px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+/* HOVER EFFECT */
+.service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.12);
+    background:#f5f9ff;
+}
+
+.service-icon{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.service-card h3{
+    margin:8px 0;
+    color:#0a7cff;
+    font-size:17px;
+}
+
+.service-card p{
+    color:#555;
+    font-size:13px;
+    line-height:1.6;
+    margin:0;
+}
+
+/* FINAL BUTTONS INSIDE SERVICES */
+.services .btn{
+    margin-top:14px;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+    body{
+        padding:12px;
+    }
+
+    .box{
+        padding:18px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .hero-tagline{
+        font-size:15px;
+    }
+
+    .hero-description{
+        font-size:13px;
+    }
+
+    .btn{
+        font-size:15px;
+        padding:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
 <div class="box">
 
     <!-- LOGO -->
-    <img class="logo" src="https://raw.githubusercontent.com/physioseba/physioseba/main/f7096a4e-f2b7-4f99-a1e3-bb4332cf7a14.jfif" alt="Physio Seba Logo">
+    <img class="logo"
+         src="https://raw.githubusercontent.com/physioseba/physioseba/main/f7096a4e-f2b7-4f99-a1e3-bb4332cf7a14.jfif"
+         alt="Physio Seba Logo">
 
-    <!-- HERO CONTENT -->
+    <!-- HEADLINE (H1) -->
     <h1>Home Physiotherapy in Dhaka</h1>
 
-    <p style="font-size:17px;font-weight:bold;color:#0a7cff;margin-top:8px;">
-        120+ Registered Physiotherapists | Home Visit Within 2 Hours
-    </p>
+    <!-- SUBHEADLINE / UNIQUE VALUE -->
+    <div class="hero-tagline">
+        120+ Registered Physiotherapists • Home Visit Within 2 Hours
+    </div>
 
-    <p style="font-size:14px;line-height:1.6;color:#555;margin-top:10px;">
+    <!-- SHORT DESCRIPTION -->
+    <div class="hero-description">
         Professional home physiotherapy services for stroke rehabilitation,
-        back pain, neck pain, sports injuries, post-surgery rehabilitation,
+        back pain, neck pain, sports injuries, post-surgery recovery,
         neurological conditions and elderly care across Dhaka.
-    </p>
+    </div>
 
     <!-- HERO IMAGE -->
-    <img class="main-img" src="https://raw.githubusercontent.com/physioseba/physioseba/main/9b7268b4-b19d-4327-9610-ad2dff9ae98a.jfif" alt="Home Physiotherapy Service">
+    <img class="main-img"
+         src="https://raw.githubusercontent.com/physioseba/physioseba/main/9b7268b4-b19d-4327-9610-ad2dff9ae98a.jfif"
+         alt="Home Physiotherapy Service in Dhaka">
 
     <!-- TRUST BADGES -->
     <div class="trust">
@@ -27,7 +237,7 @@
         ✔ 1000+ Happy Patients
     </div>
 
-    <!-- PRIMARY CTA -->
+    <!-- CTA BUTTONS -->
     <a class="btn call-btn" href="tel:01914958611">📞 Call Now</a>
     <a class="btn whatsapp-btn" href="https://wa.me/8801914958611">💬 WhatsApp</a>
 
@@ -39,37 +249,37 @@
         <div class="service-card">
             <div class="service-icon">🩺</div>
             <h3>Stroke Rehabilitation</h3>
-            <p>Improve mobility, strength, balance and independence after stroke.</p>
+            <p>Improve mobility, strength, balance, and independence after stroke.</p>
         </div>
 
         <div class="service-card">
             <div class="service-icon">🧠</div>
             <h3>Neurological Physiotherapy</h3>
-            <p>Treatment for Parkinson's disease, spinal cord injuries and neurological conditions.</p>
+            <p>Treatment for Parkinson's disease, spinal cord injuries and neurological problems.</p>
         </div>
 
         <div class="service-card">
             <div class="service-icon">💪</div>
             <h3>Pain Management</h3>
-            <p>Effective treatment for back pain, neck pain, shoulder pain and knee pain.</p>
+            <p>Back, neck, shoulder, knee pain and musculoskeletal disorders treatment.</p>
         </div>
 
         <div class="service-card">
             <div class="service-icon">🏥</div>
             <h3>Post-Surgery Rehabilitation</h3>
-            <p>Recover faster after joint replacement, fractures and other surgeries.</p>
+            <p>Recovery after surgery like joint replacement and fracture fixation.</p>
         </div>
 
         <div class="service-card">
             <div class="service-icon">🚶</div>
             <h3>Walking & Balance Training</h3>
-            <p>Improve walking ability, balance and coordination safely.</p>
+            <p>Improve walking, balance and coordination safely.</p>
         </div>
 
         <div class="service-card">
             <div class="service-icon">⚽</div>
             <h3>Sports Injury Rehabilitation</h3>
-            <p>Professional rehabilitation for sports injuries and muscle strain.</p>
+            <p>Fast recovery from sports injuries and muscle strain.</p>
         </div>
 
         <!-- FINAL CTA -->
@@ -79,3 +289,6 @@
     </div>
 
 </div>
+
+</body>
+</html>
