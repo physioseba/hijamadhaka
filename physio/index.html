@@ -4,291 +4,467 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Physiotherapy in Dhaka | Physio Seba</title>
-
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 body{
-    margin:0;
-    padding:20px;
-    font-family:Arial, sans-serif;
-    background:#f3f3f3;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    min-height:100vh;
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+color:#333;
+line-height:1.6;
 }
-
-/* MAIN BOX */
-.box{
-    background:#fff;
-    padding:20px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    max-width:420px;
-    width:100%;
+.container{
+width:92%;
+max-width:1100px;
+margin:auto;
 }
-
-/* LOGO */
+/* HEADER */
+header{
+background:#fff;
+padding:15px 0;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
 .logo{
-    width:80px;
-    height:80px;
-    object-fit:cover;
-    border-radius:50%;
-    border:2px solid #0a7cff;
-    margin-bottom:12px;
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #0a7cff;
 }
-
-/* TITLE */
-h1{
-    color:#0a7cff;
-    margin:5px 0;
-    font-size:28px;
-    line-height:1.2;
-    font-weight:700;
+.brand h2{
+color:#0a7cff;
+font-size:28px;
 }
-
-/* SUBHEADLINE */
-.hero-tagline{
-    font-size:16px;
-    font-weight:700;
-    color:#0a7cff;
-    margin:8px 0;
-    line-height:1.5;
+.brand p{
+font-size:14px;
+color:#666;
 }
-
-/* DESCRIPTION */
-.hero-description{
-    margin:10px auto 16px;
-    color:#555;
-    font-size:14px;
-    line-height:1.7;
-    max-width:360px;
+.phone{
+text-align:right;
 }
-
-/* MAIN IMAGE */
-.main-img{
-    width:100%;
-    border-radius:12px;
-    margin:12px 0;
-    display:block;
+.phone a{
+text-decoration:none;
+color:#0a7cff;
+font-size:28px;
+font-weight:bold;
 }
-
-/* TRUST */
-.trust{
-    text-align:left;
-    background:#f8f9ff;
-    border:1px solid #dbe9ff;
-    padding:14px;
-    border-radius:10px;
-    margin:15px 0;
-    font-size:14px;
-    color:#333;
-    line-height:1.8;
-}
-
-/* BUTTONS */
-.btn{
-    display:block;
-    margin-top:12px;
-    padding:14px;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:700;
-    transition:0.25s ease;
-}
-
 .call-btn{
-    background:#0a7cff;
+display:inline-block;
+margin-top:8px;
+padding:10px 20px;
+background:#0a7cff;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
-
 .call-btn:hover{
-    background:#0869d8;
+background:#085fcb;
 }
-
-.whatsapp-btn{
-    background:#25D366;
+/* HERO */
+.hero{
+padding:60px 0;
 }
-
-.whatsapp-btn:hover{
-    background:#1fb357;
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
-
-/* SERVICES */
-.services{
-    margin-top:24px;
+.tagline{
+display:inline-block;
+background:#eaf4ff;
+color:#0a7cff;
+padding:8px 16px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:18px;
 }
-
-.section-title{
-    text-align:center;
-    color:#0a7cff;
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:16px;
+.hero h1{
+font-size:46px;
+line-height:1.2;
+color:#0a7cff;
+margin-bottom:18px;
 }
-
-/* SERVICE CARD */
-.service-card{
-    background:#fff;
-    border:1px solid #e5e5e5;
-    border-radius:12px;
-    padding:16px;
-    margin-top:14px;
-    text-align:center;
-    box-shadow:0 2px 6px rgba(0,0,0,0.05);
-    transition:0.3s;
+.hero p{
+font-size:18px;
+margin-bottom:25px;
 }
-
-/* HOVER EFFECT */
-.service-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.12);
-    background:#f5f9ff;
+.trust{
+background:#fff;
+border:1px solid #dbe8ff;
+padding:18px;
+border-radius:12px;
+margin-bottom:25px;
 }
-
-.service-icon{
-    font-size:38px;
-    margin-bottom:8px;
+.trust ul{
+list-style:none;
 }
-
-.service-card h3{
-    margin:8px 0;
-    color:#0a7cff;
-    font-size:17px;
+.trust li{
+padding:7px 0;
+font-size:16px;
 }
-
-.service-card p{
-    color:#555;
-    font-size:13px;
-    line-height:1.6;
-    margin:0;
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
 }
-
-/* FINAL BUTTONS INSIDE SERVICES */
-.services .btn{
-    margin-top:14px;
+.btn{
+padding:15px 28px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
 }
-
+.blue{
+background:#0a7cff;
+color:#fff;
+}
+.green{
+background:#25D366;
+color:#fff;
+}
+.hero img{
+width:100%;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
 /* MOBILE */
-@media(max-width:480px){
-    body{
-        padding:12px;
-    }
-
-    .box{
-        padding:18px;
-    }
-
-    h1{
-        font-size:24px;
-    }
-
-    .hero-tagline{
-        font-size:15px;
-    }
-
-    .hero-description{
-        font-size:13px;
-    }
-
-    .btn{
-        font-size:15px;
-        padding:13px;
-    }
+@media(max-width:768px){
+.header{
+flex-direction:column;
+gap:15px;
+}
+.phone{
+text-align:center;
+}
+.hero-grid{
+grid-template-columns:1fr;
+}
+.hero h1{
+font-size:34px;
+}
 }
 </style>
 </head>
-
 <body>
-
-<div class="box">
-
-    <!-- LOGO -->
-    <img class="logo"
-         src="https://raw.githubusercontent.com/physioseba/physioseba/main/f7096a4e-f2b7-4f99-a1e3-bb4332cf7a14.jfif"
-         alt="Physio Seba Logo">
-    
-     <!-- SUBHEADLINE / UNIQUE VALUE -->
-    <div class="hero-tagline">
-        120+ Registered Physiotherapists • Home Visit Within 2 Hours
-    </div>
-
-    <!-- HEADLINE (H1) -->
-    <h1>Home Physiotherapy in Dhaka</h1>
-
-    <!-- SHORT DESCRIPTION -->
-    <div class="hero-description">
-        Professional home physiotherapy services for stroke rehabilitation,
-        back pain, neck pain, sports injuries, post-surgery recovery,
-        neurological conditions and elderly care across Dhaka.
-    </div>
-
-    <!-- HERO IMAGE -->
-    <img class="main-img"
-         src="https://raw.githubusercontent.com/physioseba/physioseba/main/9b7268b4-b19d-4327-9610-ad2dff9ae98a.jfif"
-         alt="Home Physiotherapy Service in Dhaka">
-
-    <!-- TRUST BADGES -->
-    <div class="trust">
-        ✔ 120+ Registered Physiotherapists<br>
-        ✔ Home Service Within 2 Hours in Dhaka<br>
-        ✔ Experienced & Certified Therapists<br>
-        ✔ 1000+ Happy Patients
-    </div>
-
-    <!-- CTA BUTTONS -->
-    <a class="btn call-btn" href="tel:01914958611">📞 Call Now</a>
-    <a class="btn whatsapp-btn" href="https://wa.me/8801914958611">💬 WhatsApp</a>
-
-    <!-- SERVICES -->
-    <div class="services">
-
-        <div class="section-title">Our Physiotherapy Services</div>
-
-        <div class="service-card">
-            <div class="service-icon">🩺</div>
-            <h3>Stroke Rehabilitation</h3>
-            <p>Improve mobility, strength, balance, and independence after stroke.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🧠</div>
-            <h3>Neurological Physiotherapy</h3>
-            <p>Treatment for Parkinson's disease, spinal cord injuries and neurological problems.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">💪</div>
-            <h3>Pain Management</h3>
-            <p>Back, neck, shoulder, knee pain and musculoskeletal disorders treatment.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🏥</div>
-            <h3>Post-Surgery Rehabilitation</h3>
-            <p>Recovery after surgery like joint replacement and fracture fixation.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🚶</div>
-            <h3>Walking & Balance Training</h3>
-            <p>Improve walking, balance and coordination safely.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">⚽</div>
-            <h3>Sports Injury Rehabilitation</h3>
-            <p>Fast recovery from sports injuries and muscle strain.</p>
-        </div>
-
-        <!-- FINAL CTA -->
-        <a class="btn call-btn" href="tel:01914958611">📞 Call Now</a>
-        <a class="btn whatsapp-btn" href="https://wa.me/8801914958611">💬 WhatsApp</a>
-
-    </div>
-
+<header>
+<div class="container header">
+<div class="logo-area">
+<img
+class="logo"
+src="https://raw.githubusercontent.com/physioseba/physioseba/main/f7096a4e-f2b7-4f99-a1e3-bb4332cf7a14.jfif"
+alt="Physio Seba">
+<div class="brand">
+<h2>Physio Seba</h2>
+<p>Home Physiotherapy Service</p>
 </div>
-
+</div>
+<div class="phone">
+<a href="tel:01914958611">
+01914-958611
+</a>
+<br>
+<a class="call-btn" href="tel:01914958611">
+📞 Call Now
+</a>
+</div>
+</div>
+</header>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="tagline">
+120+ Registered Physiotherapists • Home Visit Within 2 Hours
+</div>
+<h1>
+Home Physiotherapy in Dhaka
+</h1>
+<p>
+Professional home physiotherapy services for Stroke Rehabilitation, Back Pain, Neck Pain, Sports Injury, Post Surgery Rehabilitation, Neurological Conditions and Elderly Care across Dhaka.
+</p>
+<div class="trust">
+<ul>
+<li>✔ 120+ Registered Physiotherapists</li>
+<li>✔ Home Service Within 2 Hours in Dhaka</li>
+<li>✔ Experienced & Certified Therapists</li>
+<li>✔ 1000+ Happy Patients</li>
+</ul>
+</div>
+<div class="buttons">
+<a class="btn blue" href="tel:01914958611">
+📞 Call Now
+</a>
+<a class="btn green"
+href="https://wa.me/8801914958611">
+💬 WhatsApp
+</a>
+</div>
+</div>
+<div>
+<img
+src="https://raw.githubusercontent.com/physioseba/physioseba/main/9b7268b4-b19d-4327-9610-ad2dff9ae98a.jfif"
+alt="Home Physiotherapy">
+</div>
+</div>
+</section>
+<!-- PART 2 START HERE --> <!-- =========================
+OUR SERVICES
+========================= -->
+<section style="padding:70px 0;background:#fff;">
+<div class="container">
+<h2 style="text-align:center;font-size:38px;color:#0a7cff;margin-bottom:15px;">
+Our Physiotherapy Services
+</h2>
+<p style="text-align:center;color:#666;margin-bottom:40px;">
+Professional Home Physiotherapy & Rehabilitation Services Across Dhaka
+</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+<div class="service-card">
+<h3>🩺 Stroke Rehabilitation</h3>
+<p>Regain mobility, strength and independence after stroke with personalized home rehabilitation.</p>
+</div>
+<div class="service-card">
+<h3>🧠 Neurological Physiotherapy</h3>
+<p>Expert physiotherapy for Parkinson's disease, spinal cord injury and neurological disorders.</p>
+</div>
+<div class="service-card">
+<h3>💪 Pain Management</h3>
+<p>Back pain, neck pain, shoulder pain, knee pain and arthritis treatment.</p>
+</div>
+<div class="service-card">
+<h3>🏥 Post Surgery Rehabilitation</h3>
+<p>Professional recovery after knee replacement, hip replacement and fracture surgery.</p>
+</div>
+<div class="service-card">
+<h3>🚶 Walking & Balance Training</h3>
+<p>Improve balance, walking ability and reduce fall risk safely.</p>
+</div>
+<div class="service-card">
+<h3>⚽ Sports Injury Rehabilitation</h3>
+<p>Fast recovery from ligament injury, muscle strain and sports related pain.</p>
+</div>
+</div>
+</div>
+</section>
+<style>
+.service-card{
+background:#fff;
+border:1px solid #e5e5e5;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.06);
+transition:.3s;
+}
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+.service-card h3{
+margin-bottom:12px;
+color:#0a7cff;
+font-size:22px;
+}
+.service-card p{
+color:#555;
+font-size:15px;
+line-height:1.8;
+}
+</style>
+<!-- =========================
+ABOUT
+========================= -->
+<section style="padding:70px 0;background:#f5f7fb;">
+<div class="container">
+<h2 style="text-align:center;font-size:38px;color:#0a7cff;margin-bottom:20px;">
+Why Choose Physio Seba?
+</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;">
+<div>
+<h3>✔ Experienced Team</h3>
+<p>120+ registered physiotherapists providing professional home physiotherapy across Dhaka.</p>
+</div>
+<div>
+<h3>✔ Fast Home Visit</h3>
+<p>Book today and receive physiotherapy services within approximately 2 hours in most Dhaka areas.</p>
+</div>
+<div>
+<h3>✔ Modern Equipment</h3>
+<p>TENS, IFT, Ultrasound Therapy, Traction, Exercise Therapy and more.</p>
+</div>
+<div>
+<h3>✔ Personalized Treatment</h3>
+<p>Every patient receives an individual assessment and treatment plan.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+PROCESS
+========================= -->
+<section style="padding:70px 0;background:#fff;">
+<div class="container">
+<h2 style="text-align:center;font-size:38px;color:#0a7cff;margin-bottom:40px;">
+Treatment Process
+</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;text-align:center;">
+<div>
+<div style="font-size:55px;">📞</div>
+<h3>Call Us</h3>
+<p>Call or WhatsApp to book your appointment.</p>
+</div>
+<div>
+<div style="font-size:55px;">👨‍⚕️</div>
+<h3>Assessment</h3>
+<p>Professional physiotherapist visits your home and evaluates your condition.</p>
+</div>
+<div>
+<div style="font-size:55px;">🏃</div>
+<h3>Treatment</h3>
+<p>Evidence-based physiotherapy treatment with modern equipment.</p>
+</div>
+<div>
+<div style="font-size:55px;">😊</div>
+<h3>Recovery</h3>
+<p>Improve mobility, reduce pain and regain independence.</p>
+</div>
+</div>
+<div style="text-align:center;margin-top:45px;">
+<a href="tel:01914958611" class="btn blue">
+📞 Call Now
+</a>
+<a href="https://wa.me/8801914958611" class="btn green">
+💬 WhatsApp
+</a>
+</div>
+</div>
+</section>
+<!-- PART 3 START HERE --> <!-- =========================
+PATIENT TESTIMONIALS
+========================= -->
+<section style="padding:70px 0;background:#f5f7fb;">
+<div class="container">
+<h2 style="text-align:center;font-size:38px;color:#0a7cff;margin-bottom:15px;">
+Patient Testimonials
+</h2>
+<p style="text-align:center;color:#666;margin-bottom:40px;">
+What Our Patients Say
+</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
+<div class="service-card">
+★★★★★
+<h3>Stroke Rehabilitation</h3>
+<p>
+"My father recovered his walking ability after regular home physiotherapy. Highly recommended."
+</p>
+<strong>– Guljer Ahmed</strong>
+</div>
+<div class="service-card">
+★★★★★
+<h3>Back Pain Treatment</h3>
+<p>
+"Professional therapist, on-time home visit and excellent pain relief after a few sessions."
+</p>
+<strong>– Rahim Uddin</strong>
+</div>
+<div class="service-card">
+★★★★★
+<h3>Knee Pain</h3>
+<p>
+"Very satisfied with the treatment. Friendly therapist and quality service."
+</p>
+<strong>– Nasima Begum</strong>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+FAQ
+========================= -->
+<section style="padding:70px 0;background:#fff;">
+<div class="container">
+<h2 style="text-align:center;font-size:38px;color:#0a7cff;margin-bottom:40px;">
+Frequently Asked Questions
+</h2>
+<div class="service-card">
+<h3>Do you provide home physiotherapy in all areas of Dhaka?</h3>
+<p>Yes. We provide home physiotherapy services in most areas of Dhaka.</p>
+</div>
+<div class="service-card">
+<h3>How quickly can I get a physiotherapist?</h3>
+<p>In most areas of Dhaka we can arrange a home visit within approximately 2 hours.</p>
+</div>
+<div class="service-card">
+<h3>Which conditions do you treat?</h3>
+<p>Stroke, back pain, neck pain, knee pain, frozen shoulder, neurological disorders, post-surgery rehabilitation, sports injuries and elderly rehabilitation.</p>
+</div>
+<div class="service-card">
+<h3>How can I book an appointment?</h3>
+<p>Simply call us or send a WhatsApp message.</p>
+</div>
+</div>
+</section>
+<!-- =========================
+FINAL CTA
+========================= -->
+<section style="padding:80px 20px;background:#0a7cff;color:#fff;text-align:center;">
+<div class="container">
+<h2 style="font-size:40px;margin-bottom:15px;">
+Need Home Physiotherapy Today?
+</h2>
+<p style="font-size:18px;margin-bottom:30px;">
+Book a professional physiotherapist at your home anywhere in Dhaka.
+</p>
+<a href="tel:01914958611"
+style="display:inline-block;background:#fff;color:#0a7cff;padding:16px 35px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:18px;margin:8px;">
+📞 Call Now
+</a>
+<a href="https://wa.me/8801914958611"
+style="display:inline-block;background:#25D366;color:#fff;padding:16px 35px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:18px;margin:8px;">
+💬 WhatsApp
+</a>
+</div>
+</section>
+<!-- =========================
+FOOTER
+========================= -->
+<footer style="background:#072f57;color:#fff;padding:45px 20px;">
+<div class="container" style="text-align:center;">
+<h2>Physio Seba</h2>
+<p style="margin:15px 0;">
+Professional Home Physiotherapy & Rehabilitation Services in Dhaka.
+</p>
+<p>
+📞 <a href="tel:01914958611" style="color:#fff;text-decoration:none;">
+01914-958611
+</a>
+<br><br>
+💬 <a href="https://wa.me/8801914958611" style="color:#fff;text-decoration:none;">
+WhatsApp
+</a>
+</p>
+<hr style="margin:30px 0;border-color:rgba(255,255,255,.2);">
+<p>
+© 2026 Physio Seba. All Rights Reserved.
+</p>
+</div>
+</footer>
 </body>
 </html>
+
