@@ -93,8 +93,14 @@ section{padding:90px 24px;}
 .service-card:hover .service-icon{background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);}
 .service-card h3{font-size:16px;font-weight:600;color:var(--deep);margin-bottom:8px;transition:.3s;position:relative;z-index:1;}
 .service-card:hover h3{color:var(--white);}
-.service-card p{font-size:13.5px;color:var(--text-muted);line-height:1.65;transition:.3s;position:relative;z-index:1;}
+.service-card p{font-size:13.5px;color:var(--text-muted);line-height:1.65;transition:.3s;position:relative;z-index:1;margin-bottom:18px;}
 .service-card:hover p{color:rgba(255,255,255,0.75);}
+.service-link{display:inline-flex;align-items:center;gap:7px;color:var(--teal);font-size:13.5px;font-weight:700;text-decoration:none;position:relative;z-index:2;padding:7px 0;border-radius:6px;transition:color .25s,gap .25s;}
+.service-link::after{content:'\2192';font-size:17px;line-height:1;transition:transform .25s;}
+.service-link:hover{gap:11px;color:var(--gold-light);}
+.service-link:hover::after{transform:translateX(2px);}
+.service-link:focus-visible{outline:3px solid rgba(201,168,76,.45);outline-offset:4px;}
+.service-card:hover .service-link{color:var(--gold-light);}
 .services-cta{text-align:center;margin-top:44px;}
 
 /* ── WHY CHOOSE US ── */
@@ -315,16 +321,16 @@ footer span{color:var(--gold);}
       <p class="section-sub">Professional cupping therapy services delivered at your home with certified practitioners and hygienic equipment.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card"><div class="service-icon">🩸</div><h3>Wet Cupping Therapy</h3><p>Improves circulation, relieves muscle tension, and promotes natural healing through traditional Hijama technique.</p></div>
-      <div class="service-card"><div class="service-icon">💨</div><h3>Dry Cupping Therapy</h3><p>Reduces pain, muscle stiffness, and stress by stimulating blood flow without incision.</p></div>
-      <div class="service-card"><div class="service-icon">🦴</div><h3>Pain Management Cupping</h3><p>Helps manage chronic pain, muscle tension, and joint discomfort through targeted cupping.</p></div>
-      <div class="service-card"><div class="service-icon">💇</div><h3>Hijama for Hair Loss</h3><p>Supports scalp circulation and promotes healthier hair growth with focused cupping therapy.</p></div>
-      <div class="service-card"><div class="service-icon">🔙</div><h3>Hijama for Back Pain</h3><p>Relieves back pain, reduces stiffness, and improves mobility for lasting comfort.</p></div>
-      <div class="service-card"><div class="service-icon">🌿</div><h3>Hijama for Allergy</h3><p>Supports immune balance and helps manage allergy-related symptoms naturally.</p></div>
-      <div class="service-card"><div class="service-icon">🏃</div><h3>Sports Recovery Cupping</h3><p>Reduces muscle soreness and speeds up recovery after physical activity or training.</p></div>
-      <div class="service-card"><div class="service-icon">✨</div><h3>Hijama for Wellness</h3><p>Promotes relaxation, better circulation, and overall physical and mental well-being.</p></div>
-      <div class="service-card"><div class="service-icon">🧘</div><h3>Stress & Fatigue Relief</h3><p>Helps reduce stress, fatigue, and physical tension through therapeutic cupping sessions.</p></div>
-      <div class="service-card"><div class="service-icon">🛡️</div><h3>Preventive Hijama Sessions</h3><p>Supports long-term health and preventive wellness care through regular sessions.</p></div>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🩸</div><h3>Wet Cupping Therapy</h3><p>Improves circulation, relieves muscle tension, and promotes natural healing through traditional Hijama technique.</p><a class="service-link" href="https://hijamadhaka.com/wet-cupping-therapy/" aria-label="Learn more about Wet Cupping Therapy">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">💨</div><h3>Dry Cupping Therapy</h3><p>Reduces pain, muscle stiffness, and stress by stimulating blood flow without incision.</p><a class="service-link" href="https://hijamadhaka.com/dry-cupping-therapy/" aria-label="Learn more about Dry Cupping Therapy">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🦴</div><h3>Pain Management Cupping</h3><p>Helps manage chronic pain, muscle tension, and joint discomfort through targeted cupping.</p><a class="service-link" href="https://hijamadhaka.com/pain-management-cupping/" aria-label="Learn more about Pain Management Cupping">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">💇</div><h3>Hijama for Hair Loss</h3><p>Supports scalp circulation and promotes healthier hair growth with focused cupping therapy.</p><a class="service-link" href="https://hijamadhaka.com/hijama-for-hair-loss/" aria-label="Learn more about Hijama for Hair Loss">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🔙</div><h3>Hijama for Back Pain</h3><p>Relieves back pain, reduces stiffness, and improves mobility for lasting comfort.</p><a class="service-link" href="https://hijamadhaka.com/hijama-for-back-pain/" aria-label="Learn more about Hijama for Back Pain">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🌿</div><h3>Hijama for Allergy</h3><p>Supports immune balance and helps manage allergy-related symptoms naturally.</p><a class="service-link" href="https://hijamadhaka.com/hijama-for-allergy/" aria-label="Learn more about Hijama for Allergy">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🏃</div><h3>Sports Recovery Cupping</h3><p>Reduces muscle soreness and speeds up recovery after physical activity or training.</p><a class="service-link" href="https://hijamadhaka.com/sports-recovery-cupping/" aria-label="Learn more about Sports Recovery Cupping">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">✨</div><h3>Hijama for Wellness</h3><p>Promotes relaxation, better circulation, and overall physical and mental well-being.</p><a class="service-link" href="https://hijamadhaka.com/hijama-for-wellness/" aria-label="Learn more about Hijama for Wellness">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🧘</div><h3>Stress &amp; Fatigue Relief</h3><p>Helps reduce stress, fatigue, and physical tension through therapeutic cupping sessions.</p><a class="service-link" href="https://hijamadhaka.com/stress-fatigue-relief/" aria-label="Learn more about Stress and Fatigue Relief">Learn More</a></article>
+      <article class="service-card"><div class="service-icon" aria-hidden="true">🛡️</div><h3>Preventive Hijama Sessions</h3><p>Supports long-term health and preventive wellness care through regular sessions.</p><a class="service-link" href="https://hijamadhaka.com/preventive-hijama-sessions/" aria-label="Learn more about Preventive Hijama Sessions">Learn More</a></article>
     </div>
     <div class="services-cta">
       <a href="#appointment" class="btn-primary">📅 Book a Session</a>
