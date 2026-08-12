@@ -166,6 +166,296 @@ section{padding:90px 24px;}
 .faq-a-inner{padding:0 24px 20px;font-size:14px;color:var(--text-muted);line-height:1.75;border-top:1px solid var(--border);}
 .faq-item.open .faq-a{max-height:300px;}
 
+<!-- Hijama Dhaka — MAIN WEBSITE Service Areas Section Only -->
+<style>
+.hd-areas{
+  --g:#0f5b45;
+  --g2:#15795a;
+  --soft:#eaf6f0;
+  --text:#17241e;
+  --muted:#5b6a63;
+  --border:#d8e6df;
+  --shadow:0 14px 38px rgba(15,91,69,.08);
+  --shadow2:0 22px 54px rgba(15,91,69,.15);
+  padding:78px 0;
+  background:
+    radial-gradient(circle at 8% 10%,rgba(21,121,90,.08),transparent 26%),
+    #f7faf8;
+  color:var(--text);
+}
+.hd-areas *,.hd-areas *::before,.hd-areas *::after{box-sizing:border-box}
+.hd-wrap{width:min(calc(100% - 32px),1160px);margin:auto}
+.hd-intro{max-width:800px;margin:0 auto 34px;text-align:center}
+.hd-kicker{
+  display:inline-flex;
+  margin:0 0 10px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:var(--soft);
+  color:var(--g);
+  font-size:.86rem;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase
+}
+.hd-areas h2{
+  margin:0 0 14px;
+  font-size:clamp(2rem,4vw,3.25rem);
+  line-height:1.15;
+  letter-spacing:-.035em
+}
+.hd-intro>p:last-child{
+  margin:0;
+  color:var(--muted);
+  font-size:1.05rem;
+  line-height:1.75
+}
+.hd-group{margin-top:34px}
+.hd-group-title{margin:0 0 16px;font-weight:850}
+.hd-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px
+}
+.hd-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-height:220px;
+  padding:24px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:var(--shadow);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease
+}
+.hd-card::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:4px;
+  background:var(--g)
+}
+.hd-card-top{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px
+}
+.hd-num{
+  display:grid;
+  place-items:center;
+  width:38px;
+  height:38px;
+  flex:0 0 auto;
+  border-radius:12px;
+  background:var(--soft);
+  color:var(--g);
+  font-size:.86rem;
+  font-weight:900
+}
+.hd-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#fff6dd;
+  color:#765610;
+  font-size:.76rem;
+  font-weight:800;
+  white-space:nowrap
+}
+.hd-card h3{
+  margin:0 0 9px;
+  font-size:1.23rem;
+  line-height:1.3;
+  letter-spacing:-.02em
+}
+.hd-card p{
+  margin:0 0 20px;
+  color:var(--muted);
+  line-height:1.65
+}
+.hd-link{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  width:fit-content;
+  margin-top:auto;
+  color:var(--g);
+  font-weight:850;
+  text-decoration:none
+}
+.hd-link span{transition:transform .18s ease}
+.hd-link:focus-visible{
+  outline:3px solid #1d8c68;
+  outline-offset:4px;
+  border-radius:6px
+}
+@media(hover:hover) and (pointer:fine){
+  .hd-card:hover{
+    transform:translateY(-5px);
+    border-color:#a8d2be;
+    box-shadow:var(--shadow2)
+  }
+  .hd-card:hover .hd-link span{transform:translateX(4px)}
+}
+@media(max-width:900px){
+  .hd-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .hd-areas{padding:58px 0}
+  .hd-wrap{width:min(calc(100% - 24px),1160px)}
+  .hd-grid{grid-template-columns:1fr}
+  .hd-card{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .hd-card,.hd-link span{transition:none!important}
+}
+</style>
+
+<section class="hd-areas" id="service-areas" aria-labelledby="hd-areas-title">
+  <div class="hd-wrap">
+
+    <div class="hd-intro">
+      <p class="hd-kicker">Service Areas</p>
+
+      <h2 id="hd-areas-title">Hijama &amp; Cupping Therapy Across Dhaka</h2>
+
+      <p>
+        Hijama Dhaka currently provides Hijama and cupping therapy services across
+        major areas of Dhaka, with more locations added regularly. Select your area
+        below and click Learn More to view detailed service information, Wet &amp; Dry
+        Cupping guidance, practitioner availability, safety information, booking details
+        and frequently asked questions.
+      </p>
+    </div>
+
+    <div class="hd-group">
+      <div class="hd-grid">
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">01</span></div>
+          <h3>Hijama Mirpur</h3>
+          <p>Explore Hijama and Cupping Therapy service information for Mirpur, Dhaka.</p>
+          <a class="hd-link" href="/hijama-mirpur/" aria-label="Learn more about Hijama in Mirpur">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">02</span></div>
+          <h3>Hijama Uttara</h3>
+          <p>View Wet &amp; Dry Cupping, practitioner availability, safety and booking information for Uttara.</p>
+          <a class="hd-link" href="/hijama-uttara/" aria-label="Learn more about Hijama in Uttara">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">03</span></div>
+          <h3>Hijama Dhanmondi</h3>
+          <p>See Hijama service details, safety guidance and booking information for Dhanmondi.</p>
+          <a class="hd-link" href="/hijama-dhanmondi/" aria-label="Learn more about Hijama in Dhanmondi">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">04</span></div>
+          <h3>Hijama Gulshan</h3>
+          <p>Explore professional Hijama and Cupping Therapy information for Gulshan, Dhaka.</p>
+          <a class="hd-link" href="/hijama-gulshan/" aria-label="Learn more about Hijama in Gulshan">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">05</span></div>
+          <h3>Hijama Mohammadpur</h3>
+          <p>Learn about Cupping Therapy, practitioner options and booking in Mohammadpur.</p>
+          <a class="hd-link" href="/hijama-mohammadpur/" aria-label="Learn more about Hijama in Mohammadpur">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">06</span></div>
+          <h3>Hijama Bashundhara</h3>
+          <p>View service, Wet &amp; Dry Cupping and safety details for Bashundhara R/A.</p>
+          <a class="hd-link" href="/hijama-bashundhara/" aria-label="Learn more about Hijama in Bashundhara">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">07</span></div>
+          <h3>Hijama Malibagh</h3>
+          <p>Explore Hijama service information and appointment guidance for Malibagh.</p>
+          <a class="hd-link" href="/hijama-malibagh/" aria-label="Learn more about Hijama in Malibagh">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">08</span></div>
+          <h3>Hijama Motijheel</h3>
+          <p>See Cupping Therapy, medical safety and booking details for Motijheel.</p>
+          <a class="hd-link" href="/hijama-motijheel/" aria-label="Learn more about Hijama in Motijheel">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">09</span></div>
+          <h3>Hijama Jatrabari</h3>
+          <p>Find Hijama and Cupping Therapy service information for Jatrabari, Dhaka.</p>
+          <a class="hd-link" href="/hijama-jatrabari/" aria-label="Learn more about Hijama in Jatrabari">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top"><span class="hd-num" aria-hidden="true">10</span></div>
+          <h3>Hijama Lalbagh</h3>
+          <p>Explore Hijama service, safety information and booking guidance for Lalbagh.</p>
+          <a class="hd-link" href="/hijama-lalbagh/" aria-label="Learn more about Hijama in Lalbagh">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top">
+            <span class="hd-num" aria-hidden="true">11</span>
+            <span class="hd-badge">Check Availability</span>
+          </div>
+          <h3>Hijama Gazipur</h3>
+          <p>Check Gazipur and Tongi visit availability, safety information and booking requirements.</p>
+          <a class="hd-link" href="/hijama-gazipur/" aria-label="Check Hijama availability details for Gazipur">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="hd-card">
+          <div class="hd-card-top">
+            <span class="hd-num" aria-hidden="true">12</span>
+            <span class="hd-badge">Check Availability</span>
+          </div>
+          <h3>Hijama Narayanganj</h3>
+          <p>View Narayanganj Hijama information and confirm practitioner and travel availability before booking.</p>
+          <a class="hd-link" href="/hijama-narayanganj/" aria-label="Check Hijama availability details for Narayanganj">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  
 /* ── ABOUT ── */
 .about{background:var(--white);}
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
