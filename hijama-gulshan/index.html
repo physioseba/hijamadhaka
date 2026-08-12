@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= STEP 8: META DATA ================= -->
+<title>Hijama in Gulshan, Dhaka | Certified Cupping Therapy Clinic</title>
+<meta name="description" content="Certified male & female hijama therapists in Gulshan, Dhaka. Hygienic wet & dry cupping, in-clinic or home visit. Transparent pricing — book your session today.">
+<link rel="canonical" href="https://hijamadhaka.com/hijama-gulshan">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Hijama in Gulshan, Dhaka | Certified Cupping Therapy Clinic">
+<meta property="og:description" content="Certified male & female hijama therapists in Gulshan, Dhaka. Hygienic wet & dry cupping, in-clinic or home visit. Transparent pricing — book your session today.">
+<meta property="og:url" content="https://hijamadhaka.com/hijama-gulshan">
+<meta property="og:site_name" content="Hijama Dhaka">
+<meta property="og:image" content="https://hijamadhaka.com/images/gulshan-hijama-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="bn_BD">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hijama in Gulshan, Dhaka | Certified Cupping Therapy Clinic">
+<meta name="twitter:description" content="Certified male & female hijama therapists in Gulshan, Dhaka. Hygienic wet & dry cupping, home service available.">
+<meta name="twitter:image" content="https://hijamadhaka.com/images/gulshan-hijama-image.jpg">
+
+<!-- Slug reference (informational, not a meta standard — documented here for the dev team) -->
+<!-- Slug: /hijama-gulshan -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Trimmed to 2 weights per family (was 3+4) to cut font payload and improve LCP/CLS -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- ================= STEP 7: JSON-LD SCHEMA ================= -->
+<!-- Delivered as a single @graph so entities cross-reference by @id, which is the
+     production-correct pattern (avoids duplicate/conflicting LocalBusiness nodes). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hijamadhaka.com/#organization",
+      "name": "Hijama Dhaka",
+      "url": "https://hijamadhaka.com",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://hijamadhaka.com/#logo",
+        "url": "https://hijamadhaka.com/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.facebook.com/hijamadhaka",
+        "https://www.youtube.com/@hijamadhaka",
+        "https://wa.me/8801914958611"
+      ]
+    },
+    {
+      "@type": ["MedicalBusiness", "LocalBusiness"],
+      "@id": "https://hijamadhaka.com/hijama-gulshan#business",
+      "name": "Hijama Dhaka — Gulshan Branch",
+      "description": "Certified male and female hijama (cupping therapy) practitioners serving Gulshan, Banani, Baridhara and Niketon, Dhaka. In-clinic and home-visit sessions available.",
+      "url": "https://hijamadhaka.com/hijama-gulshan",
+      "telephone": "+8801914958611",
+      "image": { "@id": "https://hijamadhaka.com/hijama-gulshan#primaryimage" },
+      "parentOrganization": { "@id": "https://hijamadhaka.com/#organization" },
+      "medicalSpecialty": "Cupping Therapy",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gulshan, Dhaka",
+        "addressRegion": "Dhaka Division",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.7925,
+        "longitude": 90.4078
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": ["Gulshan 1 Circle", "Gulshan 2 Circle", "Gulshan Avenue", "Gulshan Society", "Pink City Shopping Complex", "Gulshan Club area", "Banani", "Baridhara", "Niketon"],
+      "makesOffer": { "@id": "https://hijamadhaka.com/hijama-gulshan#service" },
+      "hasMap": "https://www.google.com/maps?q=Hijama+Dhaka+Gulshan"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#service",
+      "name": "Hijama / Cupping Therapy",
+      "serviceType": "Cupping Therapy (Hijama)",
+      "description": "Wet and dry cupping therapy performed by certified male and female practitioners, available in-clinic in Gulshan or via home visit across nearby areas of Dhaka.",
+      "provider": { "@id": "https://hijamadhaka.com/hijama-gulshan#business" },
+      "areaServed": {
+        "@type": "City",
+        "name": "Dhaka"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Hijama Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "In-Clinic Hijama Session" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Home Service Hijama" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Female Therapist Hijama Session" }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is hijama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hijama is a traditional cupping therapy where cups are placed on the skin to create suction, drawing blood to the surface. It is often performed as wet cupping, which includes small controlled incisions, or dry cupping, which uses suction alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is hijama painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people describe hijama as a pulling or tight sensation rather than sharp pain. Any discomfort during wet cupping is typically brief, and practitioners adjust pressure based on individual tolerance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does hijama cost in Gulshan, Dhaka?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing depends on session type, number of cupping points, and whether you choose an in-clinic or home visit. Call or WhatsApp us at 01914-958611 for a quick, no-obligation quote before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should avoid hijama therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hijama is generally not recommended for pregnant women, people on blood-thinning medication, those with bleeding disorders, or anyone with active skin infections at the treatment site. Consult a physician first if you have a chronic condition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I get hijama done?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many people schedule hijama every 4 to 6 weeks, though frequency depends on individual goals and a practitioner's recommendation after an initial consultation."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hijamadhaka.com" },
+        { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://hijamadhaka.com/locations" },
+        { "@type": "ListItem", "position": 3, "name": "Hijama Gulshan", "item": "https://hijamadhaka.com/hijama-gulshan" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#webpage",
+      "url": "https://hijamadhaka.com/hijama-gulshan",
+      "name": "Hijama in Gulshan, Dhaka | Certified Cupping Therapy Clinic",
+      "description": "Certified male & female hijama therapists in Gulshan, Dhaka. Hygienic wet & dry cupping, in-clinic or home visit.",
+      "isPartOf": { "@id": "https://hijamadhaka.com/#organization" },
+      "about": { "@id": "https://hijamadhaka.com/hijama-gulshan#business" },
+      "breadcrumb": { "@id": "https://hijamadhaka.com/hijama-gulshan#breadcrumb" },
+      "primaryImageOfPage": { "@id": "https://hijamadhaka.com/hijama-gulshan#primaryimage" },
+      "inLanguage": "en-US",
+      "reviewedBy": { "@id": "https://hijamadhaka.com/hijama-gulshan#practitioner" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#primaryimage",
+      "url": "https://hijamadhaka.com/images/gulshan-hijama-image.jpg",
+      "width": 1200,
+      "height": 800,
+      "caption": "Hijama Dhaka cupping therapy clinic in Gulshan"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://hijamadhaka.com/hijama-gulshan#practitioner",
+      "name": "Amdadul Haque",
+      "jobTitle": "Certified Hijama Practitioner",
+      "worksFor": { "@id": "https://hijamadhaka.com/#organization" },
+      "description": "Certified hijama practitioner serving Gulshan and nearby areas of Dhaka with home-visit cupping therapy."
+    }
+  ]
+}
+</script>
+
+<!-- ================= STEP 9: PAGE STYLES ================= -->
+<style>
+  :root{
+    --ink:#16211d;
+    --teal:#0d5c3f;        /* deeper "Sunnah green" matching hijamadhaka.com's crescent/Islamic identity */
+    --teal-dark:#083d2a;
+    --amber:#c99a3a;       /* warm gold, echoes the ★ rating and crescent moon on the live site */
+    --amber-soft:#ecd9a8;
+    --paper:#f4f5ef;
+    --paper-alt:#ffffff;
+    --sage:#7c9a92;
+    --line:#d9dccf;
+    --whatsapp:#25D366;
+    --radius:14px;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', -apple-system, sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', Georgia, serif;
+    color:var(--teal-dark);
+    line-height:1.15;
+    margin:0 0 .5em;
+  }
+  a{color:var(--teal);}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--teal);color:#fff;padding:10px 16px;z-index:100;}
+  .skip-link:focus{left:8px;top:8px;}
+
+  /* Header */
+  header.site{background:var(--paper-alt);border-bottom:1px solid var(--line);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max);margin:0 auto;}
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.25rem;color:var(--teal-dark);text-decoration:none;display:flex;align-items:center;gap:8px;}
+  .brand .crescent{color:var(--amber);font-size:1.1em;}
+  .brand .tag{font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);border:1px solid var(--amber-soft);padding:2px 8px;border-radius:999px;}
+  .header-actions{display:flex;gap:10px;}
+  .call-btn{background:var(--teal);color:#fff;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem;white-space:nowrap;}
+  .call-btn:hover{background:var(--teal-dark);}
+  .wa-btn{background:var(--whatsapp);color:#fff;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem;white-space:nowrap;}
+  .wa-btn:hover{background:#1ea952;}
+
+  nav.breadcrumb{font-size:.85rem;color:var(--sage);padding:10px 24px 0;max-width:var(--max);margin:0 auto;}
+  nav.breadcrumb a{color:var(--sage);text-decoration:none;}
+  nav.breadcrumb a:hover{text-decoration:underline;}
+
+  /* Hero */
+  .hero{
+    padding:56px 0 40px;position:relative;overflow:hidden;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
+  }
+  .hero::before{
+    content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;
+    border-radius:50%;border:1px solid var(--amber-soft);opacity:.5;
+  }
+  .hero::after{
+    content:"";position:absolute;right:20px;top:60px;width:180px;height:180px;
+    border-radius:50%;background:radial-gradient(circle at 35% 30%, var(--amber-soft), transparent 70%);opacity:.6;
+  }
+  .hero-copy{position:relative;z-index:1;}
+  .eyebrow{color:var(--amber);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px;display:inline-block;}
+  .hero h1{font-size:clamp(2.1rem,4vw,3rem);max-width:16ch;}
+  .hero p.lead{max-width:56ch;font-size:1.1rem;color:#334;}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+  .btn-primary{background:var(--teal);color:#fff;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;}
+  .btn-secondary{border:1.5px solid var(--teal);color:var(--teal);padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;}
+  .hero-media{position:relative;z-index:1;}
+  .hero-media img{
+    width:100%;height:auto;aspect-ratio:560/640;object-fit:cover;
+    border-radius:var(--radius);border:1px solid var(--line);
+    background:#e5e7df; /* reserved fill color while the real photo loads, prevents CLS */
+  }
+  .stat-bar{
+    grid-column:1 / -1; /* span full hero width beneath both columns */
+    list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+    padding:22px;margin:12px 0 0;background:var(--paper-alt);border:1px solid var(--line);
+    border-radius:var(--radius);position:relative;z-index:1;
+  }
+  .stat-bar li{text-align:center;}
+  .stat-bar strong{display:block;font-family:'Fraunces',serif;font-size:1.5rem;color:var(--teal-dark);}
+  .stat-bar span{display:block;font-size:.78rem;color:var(--sage);margin-top:2px;}
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;}
+    .hero-media{order:-1;}
+    .stat-bar{grid-template-columns:repeat(2,1fr);}
+  }
+
+  /* Cup motif divider */
+  .cup-divider{display:flex;align-items:center;gap:10px;margin:56px 0 24px;}
+  .cup-divider .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);}
+  .cup-divider .rule{flex:1;height:1px;background:var(--line);}
+
+  section{padding:12px 0 40px;}
+  section h2{font-size:1.7rem;}
+  section h3{font-size:1.15rem;color:var(--teal);margin-top:1.4em;}
+
+  /* Cards */
+  .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:20px;}
+  .card{
+    background:var(--paper-alt);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;position:relative;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .card:hover, .card:focus-within{
+    transform:translateY(-6px);
+    box-shadow:0 12px 24px -12px rgba(13,92,63,.35);
+    border-color:var(--amber);
+  }
+  .card::before{
+    content:"";position:absolute;top:-10px;left:22px;width:34px;height:20px;
+    background:var(--amber-soft);border-radius:17px 17px 4px 4px;
+  }
+  .card h3{margin-top:0;font-size:1.05rem;}
+  .card p{margin:0;color:#3a453f;font-size:.96rem;}
+
+  /* Pricing table */
+  table{width:100%;border-collapse:collapse;margin-top:18px;background:var(--paper-alt);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 0 1px var(--line);}
+  th,td{text-align:left;padding:13px 16px;font-size:.95rem;}
+  thead th{background:var(--teal);color:#fff;font-weight:600;}
+  tbody tr:nth-child(even){background:#f8f8f3;}
+  tbody tr+tr{border-top:1px solid var(--line);}
+  .price{font-variant-numeric:tabular-nums;font-weight:600;color:var(--teal-dark);}
+
+  /* Lists */
+  ul.checklist{list-style:none;padding:0;margin:16px 0;}
+  ul.checklist li{padding-left:26px;position:relative;margin-bottom:10px;}
+  ul.checklist li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;border-radius:50%;background:var(--sage);}
+
+  .disclaimer{
+    background:#fbf7ee;border:1px solid var(--amber-soft);border-radius:var(--radius);
+    padding:18px 20px;font-size:.92rem;color:#4a3f2a;margin-top:24px;
+  }
+
+  /* FAQ */
+  details{background:var(--paper-alt);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px;}
+  details summary{font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Fraunces',serif;font-size:1.02rem;}
+  details p{margin:10px 0 2px;color:#3a453f;}
+
+  /* CTA band */
+  .cta-band{
+    background:var(--teal);color:#fff;border-radius:20px;padding:36px 30px;text-align:center;margin:48px 0;
+  }
+  .cta-band h2{color:#fff;}
+  .cta-band p{color:#dfe9e6;max-width:50ch;margin:0 auto 20px;}
+  .cta-band .btn-primary{background:#fff;color:var(--teal-dark);}
+  .cta-band .btn-primary:hover{background:var(--amber-soft);}
+
+  /* Reviews */
+  .review{background:var(--paper-alt);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;}
+  .review .stars{color:var(--amber);font-size:.9rem;margin-bottom:6px;}
+  .review .who{font-size:.85rem;color:var(--sage);margin-top:8px;}
+
+  /* Author box */
+  .author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper-alt);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-top:16px;}
+  .author-box .avatar{width:56px;height:56px;border-radius:50%;background:var(--amber-soft);flex-shrink:0;}
+  .author-box strong{display:block;color:var(--teal-dark);}
+  .author-box span{font-size:.9rem;color:var(--sage);}
+
+  footer{background:var(--teal-dark);color:#cfe0dc;padding:36px 0;margin-top:40px;font-size:.9rem;}
+  footer a{color:#fff;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+
+  @media (max-width:600px){
+    .topbar{flex-direction:row;}
+    .cta-band{padding:28px 18px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .card{transition:box-shadow .2s ease, border-color .2s ease;}
+    .card:hover, .card:focus-within{transform:none;}
+  }
+
+  /* Accessibility: visible focus states (do not remove default outline without replacing it) */
+  a:focus-visible, button:focus-visible, summary:focus-visible, .call-btn:focus-visible,
+  .btn-primary:focus-visible, .btn-secondary:focus-visible{
+    outline:3px solid var(--amber);
+    outline-offset:2px;
+    border-radius:4px;
+  }
+  /* Minimum touch target size (WCAG 2.5.8) */
+  .call-btn, .btn-primary, .btn-secondary{min-height:44px;display:inline-flex;align-items:center;}
+
+  .card-grid{list-style:none;padding:0;}
+  .map-embed{
+    width:100%;aspect-ratio:16/9;background:#e5e7df;border:1px solid var(--line);
+    border-radius:var(--radius);display:flex;align-items:center;justify-content:center;
+    color:var(--sage);font-size:.9rem;margin-top:10px;
+  }
+  .visually-hidden{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="topbar">
+    <a href="https://hijamadhaka.com" class="brand" aria-label="Hijama Dhaka — homepage">
+      <span class="crescent" aria-hidden="true">☽</span> Hijama Dhaka <span class="tag">Sunnah Care</span>
+    </a>
+    <div class="header-actions">
+      <a href="tel:01914958611" class="call-btn" aria-label="Call Hijama Dhaka at 01914-958611">📞 01914-958611</a>
+      <a href="https://wa.me/8801914958611" class="wa-btn" aria-label="Message Hijama Dhaka on WhatsApp">💬 WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol style="list-style:none;display:flex;gap:6px;padding:0;margin:0;flex-wrap:wrap;">
+    <li><a href="https://hijamadhaka.com">Home</a></li>
+    <li aria-hidden="true">/</li>
+    <li><a href="https://hijamadhaka.com/locations">Locations</a></li>
+    <li aria-hidden="true">/</li>
+    <li aria-current="page">Hijama Gulshan</li>
+  </ol>
+</nav>
+
+<main id="main" aria-label="Hijama Gulshan service page content">
+  <div class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <span class="eyebrow">☽ Sunnah Care · Gulshan, Dhaka</span>
+        <h1 id="hero-heading">Hijama &amp; Cupping Therapy in Gulshan, Dhaka</h1>
+        <p class="lead">Certified male and female hijama therapists serving Gulshan 1, Gulshan 2, Banani, Baridhara and Niketon — in-clinic or at your home, with hygienic, sterilized equipment.</p>
+        <div class="hero-ctas">
+          <a href="#booking" class="btn-primary">Book a Session</a>
+          <a href="#services" class="btn-secondary">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img
+          src="/images/gulshan-hijama-image.jpg"
+          alt="Certified therapist performing hijama cupping therapy at Hijama Dhaka's Gulshan clinic"
+          width="560"
+          height="640"
+          loading="eager"
+          fetchpriority="high">
+      </div>
+      <ul class="stat-bar" aria-label="Hijama Dhaka track record">
+        <li><strong>1000+</strong><span>Successful Sessions</span></li>
+        <li><strong>2hrs</strong><span>Home Visit Anywhere in Dhaka</span></li>
+        <li><strong>100%</strong><span>Sterile &amp; Disposable Equipment</span></li>
+        <li><strong>5★</strong><span>Patient Satisfaction</span></li>
+      </ul>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- WHAT IS HIJAMA -->
+    <section id="what-is-hijama" aria-labelledby="what-heading">
+      <h2 id="what-heading">What Is Hijama / Cupping Therapy?</h2>
+      <p>Hijama is a traditional therapy in which cups are placed on the skin to create suction, drawing blood to the surface. It is traditionally used to support circulation and relaxation, and is practiced in both a dry form (suction only) and a wet form (suction combined with small, controlled incisions).</p>
+
+      <h3>Wet Cupping vs. Dry Cupping</h3>
+      <p><strong>Wet cupping</strong> combines suction with light, controlled incisions to draw a small amount of blood to the surface. <strong>Dry cupping</strong> uses suction alone, without any incision, and is often chosen by first-time clients or for muscular tension.</p>
+
+      <h3>Hijama as Sunnah (Prophetic Medicine)</h3>
+      <p>Hijama has a long history within Islamic tradition and is commonly associated with the practice of the Prophet Muhammad (peace be upon him). Many clients in Gulshan choose specific days associated with this tradition for their sessions. This page describes general cultural practice and is not a religious ruling — please consult a scholar for guidance on religious observance.</p>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Choose Our Hijama Center in Gulshan</h2>
+      <ul class="card-grid">
+        <li class="card">
+          <h3>Certified Therapists</h3>
+          <p>Male and female practitioners, trained and experienced, available separately to respect your comfort and privacy.</p>
+        </li>
+        <li class="card">
+          <h3>Hygienic &amp; Sterile</h3>
+          <p>Single-use cups and blades where applicable, full sanitation between every client, and a clean, private treatment room.</p>
+        </li>
+        <li class="card">
+          <h3>Local to Gulshan</h3>
+          <p>Minutes from Gulshan Circle 1 &amp; 2, Gulshan Avenue, and Banani — with home visits across nearby areas.</p>
+        </li>
+      </ul>
+
+      <div class="author-box">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <strong>Amdadul Haque</strong>
+          <span>Certified Hijama Practitioner · Home &amp; In-Clinic Sessions in Gulshan and nearby areas</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Hijama Services We Offer in Gulshan</h2>
+      <h3>In-Clinic Hijama Session</h3>
+      <p>Visit our Gulshan location for a full session in a private, sanitized treatment room, guided by a certified therapist matched to your preference.</p>
+
+      <h3>Home Service Hijama</h3>
+      <p>Available across Gulshan 1, Gulshan 2, Banani, Baridhara and Niketon. Book a time and a therapist arrives with fully sterilized equipment.</p>
+
+      <h3>Condition-Focused Sessions</h3>
+      <p>Sessions commonly requested for back pain, migraine and tension headaches, high blood pressure support, and general stress and fatigue. These describe common reasons clients seek hijama, not guaranteed medical outcomes — see our disclaimer below.</p>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- BEFORE/AFTER -->
+    <section id="care" aria-labelledby="care-heading">
+      <h2 id="care-heading">Before &amp; After Your Hijama Session</h2>
+      <h3>Pre-Session Preparation</h3>
+      <ul class="checklist">
+        <li>Eat a light meal 2–3 hours before your session — avoid arriving hungry or immediately after a heavy meal.</li>
+        <li>Stay well hydrated in the 24 hours before your appointment.</li>
+        <li>Wear loose, comfortable clothing that allows easy access to the treatment area.</li>
+      </ul>
+
+      <h3>Aftercare Instructions</h3>
+      <ul class="checklist">
+        <li>Keep the treated area clean and dry for 24 hours; avoid direct sun exposure and swimming.</li>
+        <li>Drink plenty of water and rest for the remainder of the day.</li>
+        <li>Mild bruising or marks are common and typically fade within 3–10 days.</li>
+      </ul>
+
+      <h3>Who Should Avoid Hijama (Contraindications)</h3>
+      <ul class="checklist">
+        <li>Pregnant women</li>
+        <li>People taking blood-thinning medication or with bleeding disorders</li>
+        <li>Active skin infections or open wounds at the treatment site</li>
+        <li>Uncontrolled chronic conditions — please consult your physician first</li>
+      </ul>
+
+      <div class="disclaimer">
+        <strong>Medical disclaimer:</strong> Hijama is a traditional, complementary therapy. It is not a substitute for professional medical diagnosis or treatment. If you have a serious or chronic health condition, please consult a licensed physician before booking a session.
+      </div>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- LOCATION -->
+    <section id="location" aria-labelledby="location-heading">
+      <h2 id="location-heading">Areas We Serve Near Gulshan</h2>
+      <p>We're a <strong>home-visit hijama service</strong> — no need to travel to a clinic. Our therapists come to you anywhere in and around Gulshan, typically within 2 hours of booking.</p>
+      <ul class="checklist" aria-label="Popular Gulshan area landmarks we serve near">
+        <li>Gulshan 1 Circle</li>
+        <li>Gulshan 2 Circle</li>
+        <li>Gulshan Avenue</li>
+        <li>Gulshan Society</li>
+        <li>Pink City Shopping Complex</li>
+        <li>Gulshan Club area</li>
+        <li>Banani, Baridhara &amp; Niketon (bordering areas)</li>
+      </ul>
+      <address style="font-style:normal;margin-top:16px;">
+        <strong>Phone / WhatsApp:</strong> <a href="tel:01914958611">01914-958611</a> / <a href="tel:01751888446">01751-888446</a><br>
+        <strong>Hours:</strong> Every day, response within 30 minutes — home visit within 2 hours of confirmation
+      </address>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" id="booking" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Book Your Hijama Session in Gulshan Today</h2>
+      <p>Certified male &amp; female therapists. In-clinic or home visit. Same-week appointments available.</p>
+      <div class="hero-ctas" style="justify-content:center;">
+        <a href="tel:01914958611" class="btn-primary" aria-label="Call Hijama Dhaka Gulshan now to book">📞 Call: 01914-958611</a>
+        <a href="https://wa.me/8801914958611" class="wa-btn" style="padding:13px 24px;" aria-label="Message Hijama Dhaka on WhatsApp to book">💬 WhatsApp Us</a>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading">Patient Reviews — Gulshan &amp; Nearby Areas</h2>
+      <blockquote class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"I've had neck and shoulder pain for months from long hours at a desk. Amdadul Bhai came to my apartment in Gulshan 2, explained everything before starting, and I felt noticeably lighter afterward."</p>
+        <footer class="who">— <cite>Farhana Islam, Gulshan 2</cite></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Booked a home visit near Gulshan Society for my father's back pain. The equipment was sealed and sterile, and the therapist was patient with him throughout the session."</p>
+        <footer class="who">— <cite>Kamrul Hasan, Gulshan Society</cite></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"I specifically wanted a female therapist and it was arranged without any hassle. Very professional, and they arrived close to Gulshan Avenue within the time promised."</p>
+        <footer class="who">— <cite>Tania Rahman, Gulshan Avenue</cite></footer>
+      </blockquote>
+      <p style="font-size:.85rem;color:var(--sage);">These reviews are written examples for layout purposes — swap in real, verifiable patient reviews before publishing to keep AggregateRating schema and E-E-A-T accurate.</p>
+    </section>
+
+    <div class="cup-divider" role="presentation" aria-hidden="true"><span class="dot"></span><div class="rule"></div></div>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What is hijama?</summary>
+        <p>Hijama is a traditional cupping therapy where cups are placed on the skin to create suction, drawing blood to the surface. It is performed as wet cupping (with small incisions) or dry cupping (suction only).</p>
+      </details>
+      <details>
+        <summary>Is hijama painful?</summary>
+        <p>Most clients describe a pulling or tight sensation rather than sharp pain. Any discomfort during wet cupping is typically brief, and pressure is adjusted to individual tolerance.</p>
+      </details>
+      <details>
+        <summary>How much does hijama cost in Gulshan, Dhaka?</summary>
+        <p>Pricing depends on the type of session, number of cupping points, and whether it's in-clinic or a home visit. Call or WhatsApp us at 01914-958611 and we'll give you a quick quote before you book.</p>
+      </details>
+      <details>
+        <summary>Who should avoid hijama therapy?</summary>
+        <p>Hijama is generally not recommended for pregnant women, people on blood-thinning medication, or anyone with active skin infections at the treatment site. Consult a physician if you have a chronic condition.</p>
+      </details>
+      <details>
+        <summary>How often should I get hijama done?</summary>
+        <p>Many clients schedule sessions every 4 to 6 weeks, though this depends on individual goals and a practitioner's recommendation after consultation.</p>
+      </details>
+      <details>
+        <summary>Do you have female hijama therapists available in Gulshan?</summary>
+        <p>Yes — we provide separate, dedicated female therapists for clients who prefer them, in line with privacy and comfort preferences common in this market.</p>
+      </details>
+      <details>
+        <summary>Do you offer home service hijama in Gulshan and Banani?</summary>
+        <p>Yes, home visits are available across Gulshan 1, Gulshan 2, Banani, Baridhara and Niketon. An additional home-visit fee applies.</p>
+      </details>
+
+      <p style="margin-top:16px;"><a href="https://hijamadhaka.com/faq">See all 30 FAQs →</a></p>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references" aria-labelledby="references-heading">
+      <h2 id="references-heading">References</h2>
+      <ul>
+        <li>General information on cupping therapy safety and practice — consult a licensed healthcare provider for personalized medical advice.</li>
+        <li>This page is for general informational purposes and does not constitute medical advice.</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff;">Hijama Dhaka — Gulshan</strong><br>
+      Home visits across Gulshan &amp; nearby areas<br>
+      <a href="tel:01914958611">01914-958611</a> / <a href="tel:01751888446">01751-888446</a>
+    </div>
+    <div>
+      <a href="https://hijamadhaka.com/locations">Other Locations</a><br>
+      <a href="https://hijamadhaka.com/faq">FAQ</a><br>
+      <a href="https://hijamadhaka.com/about">About Us</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
